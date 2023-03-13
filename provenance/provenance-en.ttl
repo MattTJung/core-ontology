@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<..\index-en.html> a prov:Entity;
+<https://w3id.org/pmd/co> a prov:Entity;
 	 dc:title "Platform Material Digital Core Ontology (pmdco)";
 	 prov:wasAttributedTo <https://orcid.org/0000-0001-7192-7143>;
 	 dc:creator <https://orcid.org/0000-0001-7192-7143>;

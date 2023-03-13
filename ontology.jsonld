@@ -785,9 +785,6 @@
   "@id" : "http://purl.org/dc/terms/bibliographicCitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://purl.org/dc/terms/description",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
   "@id" : "http://purl.org/dc/terms/isPartOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
@@ -1245,10 +1242,6 @@
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
     "@value" : "Bernd Bayerlein, Henk Birkholz, Jannis Grundmann, Thomas Hanke, Markus Schilling, Jörg Waitelonis. (March 10th, 2023) PMDco: platform material digital ontology. Version 1.1-a.1, https://w3id.org/pmd/co"
   } ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "This is the current development version of the PMD core ontology.\nThe PMDco provides basic conceptualizations valid for the broad field of material science and engineering (MSE). It facilitates the interconnection of specific MSE application ontologies (AOs) with the very general concepts of established top level ontologies (TLOs), essential for interoperability. The PMDco class structure forms an comprehensible, extensible, semantic intermediate layer for the unified joining of MSE knowledge representations. Connection to the W3C Provenance Ontology (PROV-O) is provided. The PMDco design enables systematic integration of data and metadata on key MSE domain terms. Metadata is crucial for the reproduction of processes, experiments and simulations and thus for the reuse of data."
-  } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "http://creativecommons.org/licenses/by/4.0/"
   } ],
@@ -1257,7 +1250,11 @@
     "@value" : "Platform Material Digital Core Ontology (pmdco)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "This is the PMDco ontology."
+    "@language" : "en",
+    "@value" : "This is the current development version of the PMD core ontology.\nThe PMDco provides basic conceptualizations valid for the broad field of material science and engineering (MSE). It facilitates the interconnection of specific MSE application ontologies (AOs) with the very general concepts of established top level ontologies (TLOs), essential for interoperability. The PMDco class structure forms an comprehensible, extensible, semantic intermediate layer for the unified joining of MSE knowledge representations. Connection to the W3C Provenance Ontology (PROV-O) is provided. The PMDco design enables systematic integration of data and metadata on key MSE domain terms. Metadata is crucial for the reproduction of processes, experiments and simulations and thus for the reuse of data. PMDco at GitHub: https://github.com/materialdigital/core-ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/pmd/co"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "1.1-a.1"
