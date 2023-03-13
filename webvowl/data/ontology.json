@@ -7,10 +7,10 @@
       "en" : "Platform Material Digital Core Ontology (pmdco)"
     },
     "iri" : "https://w3id.org/pmd/co",
-    "version" : "1.1-a.1",
+    "version" : "2.0.0-alpha1",
     "author" : [ "https://orcid.org/0000-0003-1649-6832", "Jannis Grundmann", "https://orcid.org/0000-0001-7192-7143", "https://orcid.org/0000-0002-3717-7104", "https://orcid.org/0000-0002-7094-5371", "https://orcid.org/0000-0002-9014-2920" ],
     "comments" : {
-      "en" : "This is the current development version of the PMD core ontology.\nThe PMDco provides basic conceptualizations valid for the broad field of material science and engineering (MSE). It facilitates the interconnection of specific MSE application ontologies (AOs) with the very general concepts of established top level ontologies (TLOs), essential for interoperability. The PMDco class structure forms an comprehensible, extensible, semantic intermediate layer for the unified joining of MSE knowledge representations. Connection to the W3C Provenance Ontology (PROV-O) is provided. The PMDco design enables systematic integration of data and metadata on key MSE domain terms. Metadata is crucial for the reproduction of processes, experiments and simulations and thus for the reuse of data. PMDco at GitHub: https://github.com/materialdigital/core-ontology"
+      "en" : "This is a pre-release version of the PMD core ontology.\nThe PMDco provides basic conceptualizations valid for the broad field of material science and engineering (MSE). It facilitates the interconnection of specific MSE application ontologies (AOs) with the very general concepts of established top level ontologies (TLOs), essential for interoperability. The PMDco class structure forms an comprehensible, extensible, semantic intermediate layer for the unified joining of MSE knowledge representations. Connection to the W3C Provenance Ontology (PROV-O) is provided. The PMDco design enables systematic integration of data and metadata on key MSE domain terms. Metadata is crucial for the reproduction of processes, experiments and simulations and thus for the reuse of data. PMDco at GitHub: https://github.com/materialdigital/core-ontology"
     },
     "other" : {
       "license" : [ {
@@ -22,12 +22,17 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
+        "value" : "https://orcid.org/0000-0002-3717-7104",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
         "value" : "https://orcid.org/0000-0002-7094-5371",
         "type" : "iri"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://orcid.org/0000-0003-1649-6832",
+        "value" : "https://orcid.org/0000-0002-9014-2920",
         "type" : "iri"
       }, {
         "identifier" : "creator",
@@ -37,29 +42,24 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
+        "value" : "https://orcid.org/0000-0003-1649-6832",
+        "type" : "iri"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
         "value" : "https://orcid.org/0000-0001-7192-7143",
         "type" : "iri"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "https://orcid.org/0000-0002-3717-7104",
-        "type" : "iri"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "https://orcid.org/0000-0002-9014-2920",
-        "type" : "iri"
-      } ],
-      "bibliographicCitation" : [ {
-        "identifier" : "bibliographicCitation",
-        "language" : "undefined",
-        "value" : "Bernd Bayerlein, Henk Birkholz, Jannis Grundmann, Thomas Hanke, Markus Schilling, Jörg Waitelonis. (March 10th, 2023) PMDco: platform material digital ontology. Version 1.1-a.1, https://w3id.org/pmd/co",
-        "type" : "label"
       } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
-        "value" : "1.1-a.1",
+        "value" : "2.0.0-alpha1",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "undefined",
+        "value" : "Bernd Bayerlein, Henk Birkholz, Jannis Grundmann, Thomas Hanke, Markus Schilling, Jörg Waitelonis. (March 17th, 2023) PMDco: platform material digital ontology. Version 2.0.0-alpha1, https://w3id.org/pmd/co",
         "type" : "label"
       } ],
       "title" : [ {
@@ -81,7 +81,7 @@
     "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "48",
+    "id" : "39",
     "type" : "owl:Class"
   }, {
     "id" : "51",
@@ -93,7 +93,7 @@
     "id" : "67",
     "type" : "owl:Class"
   }, {
-    "id" : "71",
+    "id" : "68",
     "type" : "owl:Class"
   }, {
     "id" : "77",
@@ -153,7 +153,7 @@
     "id" : "173",
     "type" : "owl:Class"
   }, {
-    "id" : "34",
+    "id" : "36",
     "type" : "owl:Class"
   }, {
     "id" : "180",
@@ -210,10 +210,10 @@
     "id" : "239",
     "type" : "owl:Class"
   }, {
-    "id" : "190",
+    "id" : "208",
     "type" : "owl:Class"
   }, {
-    "id" : "208",
+    "id" : "190",
     "type" : "owl:Class"
   }, {
     "id" : "257",
@@ -318,7 +318,7 @@
     "id" : "373",
     "type" : "owl:Class"
   }, {
-    "id" : "69",
+    "id" : "70",
     "type" : "owl:Class"
   }, {
     "id" : "176",
@@ -360,13 +360,13 @@
     "id" : "5",
     "type" : "owl:unionOf"
   }, {
-    "id" : "25",
-    "type" : "owl:Class"
-  }, {
     "id" : "155",
     "type" : "owl:Class"
   }, {
-    "id" : "50",
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
     "type" : "owl:Class"
   }, {
     "id" : "131",
@@ -402,7 +402,7 @@
     "id" : "114",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "40",
+    "id" : "43",
     "type" : "owl:Thing"
   }, {
     "id" : "419",
@@ -528,7 +528,7 @@
     "id" : "382",
     "type" : "owl:Class"
   }, {
-    "id" : "410",
+    "id" : "411",
     "type" : "owl:Class"
   }, {
     "id" : "327",
@@ -567,10 +567,10 @@
     "id" : "95",
     "type" : "owl:Class"
   }, {
-    "id" : "424",
+    "id" : "78",
     "type" : "owl:Class"
   }, {
-    "id" : "78",
+    "id" : "424",
     "type" : "owl:Class"
   }, {
     "id" : "399",
@@ -594,7 +594,7 @@
     "id" : "158",
     "type" : "owl:Class"
   }, {
-    "id" : "68",
+    "id" : "69",
     "type" : "owl:Class"
   }, {
     "id" : "493",
@@ -615,7 +615,7 @@
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "70",
+    "id" : "71",
     "type" : "owl:Class"
   }, {
     "id" : "2",
@@ -654,7 +654,7 @@
     "id" : "186",
     "type" : "owl:Class"
   }, {
-    "id" : "36",
+    "id" : "34",
     "type" : "owl:Class"
   }, {
     "id" : "160",
@@ -669,7 +669,7 @@
     "id" : "146",
     "type" : "owl:Class"
   }, {
-    "id" : "49",
+    "id" : "40",
     "type" : "owl:Class"
   }, {
     "id" : "462",
@@ -756,7 +756,7 @@
     "id" : "470",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "413",
+    "id" : "404",
     "type" : "owl:Class"
   }, {
     "id" : "87",
@@ -864,16 +864,16 @@
     "id" : "480",
     "type" : "owl:Class"
   }, {
-    "id" : "451",
+    "id" : "322",
     "type" : "owl:Class"
   }, {
-    "id" : "322",
+    "id" : "451",
     "type" : "owl:Class"
   }, {
     "id" : "261",
     "type" : "owl:Class"
   }, {
-    "id" : "404",
+    "id" : "408",
     "type" : "owl:Class"
   }, {
     "id" : "91",
@@ -927,32 +927,6 @@
     "id" : "6",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/pmd/co/WeightedYCoordinate",
-    "baseIri" : "https://w3id.org/pmd/co",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/pmd/co",
-        "type" : "iri"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "Mass center of grey values in the other direction",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "de" : "Gewichtete Y Koordinate",
-      "IRI-based" : "WeightedYCoordinate",
-      "en" : "Weighted Y coordinate"
-    },
-    "attributes" : [ "external" ],
-    "id" : "33",
-    "superClasses" : [ "34" ]
-  }, {
     "iri" : "https://w3id.org/pmd/co/ClassificationDocument",
     "baseIri" : "https://w3id.org/pmd/co",
     "instances" : 0,
@@ -979,6 +953,32 @@
       "de" : "Klassifzierungsdokument",
       "IRI-based" : "ClassificationDocument",
       "en" : "Classification Document"
+    },
+    "attributes" : [ "external" ],
+    "id" : "33",
+    "superClasses" : [ "34" ]
+  }, {
+    "iri" : "https://w3id.org/pmd/co/WeightedYCoordinate",
+    "baseIri" : "https://w3id.org/pmd/co",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pmd/co",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Mass center of grey values in the other direction",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Gewichtete Y Koordinate",
+      "IRI-based" : "WeightedYCoordinate",
+      "en" : "Weighted Y coordinate"
     },
     "attributes" : [ "external" ],
     "id" : "35",
@@ -1012,10 +1012,10 @@
       "IRI-based" : "OpticalMicroscopy",
       "en" : "Optical Microscopy"
     },
-    "subClasses" : [ "50" ],
+    "subClasses" : [ "41" ],
     "attributes" : [ "external" ],
-    "id" : "48",
-    "superClasses" : [ "49" ]
+    "id" : "39",
+    "superClasses" : [ "40" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/Index",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -1077,6 +1077,43 @@
     "id" : "53",
     "superClasses" : [ "54" ]
   }, {
+    "iri" : "https://w3id.org/pmd/co/Elliptical",
+    "baseIri" : "https://w3id.org/pmd/co",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pmd/co",
+        "type" : "iri"
+      } ],
+      "definitionSource" : [ {
+        "identifier" : "definitionSource",
+        "language" : "en",
+        "value" : "“Elliptical.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/elliptical. Accessed 13 Jan. 2023.",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Geformt wie eine Ellipse.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Shaped like an ellipse.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Elliptisch",
+      "IRI-based" : "Elliptical",
+      "en" : "Elliptical"
+    },
+    "attributes" : [ "external" ],
+    "id" : "67",
+    "superClasses" : [ "20" ]
+  }, {
     "iri" : "http://www.w3.org/ns/prov#Person",
     "baseIri" : "http://www.w3.org/ns/prov",
     "instances" : 0,
@@ -1123,47 +1160,10 @@
       "IRI-based" : "Person",
       "undefined" : "Person"
     },
-    "subClasses" : [ "69", "70" ],
+    "subClasses" : [ "70", "71" ],
     "attributes" : [ "external" ],
-    "id" : "67",
-    "superClasses" : [ "68" ]
-  }, {
-    "iri" : "https://w3id.org/pmd/co/Elliptical",
-    "baseIri" : "https://w3id.org/pmd/co",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/pmd/co",
-        "type" : "iri"
-      } ],
-      "definitionSource" : [ {
-        "identifier" : "definitionSource",
-        "language" : "en",
-        "value" : "“Elliptical.” Merriam-Webster.com Dictionary, Merriam-Webster, https://www.merriam-webster.com/dictionary/elliptical. Accessed 13 Jan. 2023.",
-        "type" : "label"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "Shaped like an ellipse.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "de",
-        "value" : "Geformt wie eine Ellipse.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "de" : "Elliptisch",
-      "IRI-based" : "Elliptical",
-      "en" : "Elliptical"
-    },
-    "attributes" : [ "external" ],
-    "id" : "71",
-    "superClasses" : [ "20" ]
+    "id" : "68",
+    "superClasses" : [ "69" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/ProvidedIdentifier",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -1322,7 +1322,7 @@
     "subClasses" : [ "116" ],
     "attributes" : [ "external" ],
     "id" : "115",
-    "superClasses" : [ "49" ]
+    "superClasses" : [ "40" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/Electrical",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -1342,13 +1342,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Elektrisch bezieht sich auf Elektrizität oder etwas, das mit Elektrizität betrieben wird. Hier speziell auf die elektrischen Eigenschaften eines Materials.",
+        "language" : "en",
+        "value" : "Electrical is relating to electricity or something that is powered by electricity. Here specifically to the electrical properties of a material.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Electrical is relating to electricity or something that is powered by electricity. Here specifically to the electrical properties of a material.",
+        "language" : "de",
+        "value" : "Elektrisch bezieht sich auf Elektrizität oder etwas, das mit Elektrizität betrieben wird. Hier speziell auf die elektrischen Eigenschaften eines Materials.",
         "type" : "label"
       } ]
     },
@@ -1480,24 +1480,24 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Entität beschreibt ein Dokument, welches Abweichungen eines Messgerätes oder einer Maßverkörperung gegenüber einem anderen Gerät oder einer anderen Maßverkörperung feststellt und dokumentiert. Typischerweise ist die Person, welche die Kalibrierung durchführte, angegeben.",
+        "language" : "en",
+        "value" : "This entity describes a document used to state that a set of graduations to indicate values or positions has been performed. Typically, the calibration operator is included.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This entity describes a document used to state that a set of graduations to indicate values or positions has been performed. Typically, the calibration operator is included.",
+        "language" : "de",
+        "value" : "Diese Entität beschreibt ein Dokument, welches Abweichungen eines Messgerätes oder einer Maßverkörperung gegenüber einem anderen Gerät oder einer anderen Maßverkörperung feststellt und dokumentiert. Typischerweise ist die Person, welche die Kalibrierung durchführte, angegeben.",
         "type" : "label"
       } ]
     },
     "label" : {
-      "de" : "Kalibrierschein",
+      "de" : "Kalibrierungsdokument",
       "IRI-based" : "CalibrationDocument",
       "en" : "Calibration Document"
     },
     "attributes" : [ "external" ],
     "id" : "132",
-    "superClasses" : [ "36" ]
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/EnvironmentalTemperature",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -1548,13 +1548,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This property describes a horizontal measurement of an object taken at right angles to the length of the object.",
+        "language" : "de",
+        "value" : "Diese Eigenschaft bezeichnet eine horizontale Messung, die im rechten Winkel zur Länge eines Objekts vorgenommen wird.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Eigenschaft bezeichnet eine horizontale Messung, die im rechten Winkel zur Länge eines Objekts vorgenommen wird.",
+        "language" : "en",
+        "value" : "This property describes a horizontal measurement of an object taken at right angles to the length of the object.",
         "type" : "label"
       } ]
     },
@@ -1696,13 +1696,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Stiffness is the extent to which an object resists deformation in response to an applied force.",
+        "language" : "de",
+        "value" : "Die Steifigkeit ist das Maß, bis zu dem ein Objekt einer Verformung als Reaktion auf eine einwirkende Kraft widersteht.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Die Steifigkeit ist das Maß, bis zu dem ein Objekt einer Verformung als Reaktion auf eine einwirkende Kraft widersteht.",
+        "language" : "en",
+        "value" : "Stiffness is the extent to which an object resists deformation in response to an applied force.",
         "type" : "label"
       } ]
     },
@@ -1802,13 +1802,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Y-coordinate is a coordinate whose value is determined by measuring parallel to a y-axis.",
+        "language" : "de",
+        "value" : "Die Y-Koordinate ist eine Koordinate, deren Wert durch Messung parallel zu einer Y-Achse bestimmt wird.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Die Y-Koordinate ist eine Koordinate, deren Wert durch Messung parallel zu einer Y-Achse bestimmt wird.",
+        "language" : "en",
+        "value" : "Y-coordinate is a coordinate whose value is determined by measuring parallel to a y-axis.",
         "type" : "label"
       } ]
     },
@@ -1817,9 +1817,9 @@
       "IRI-based" : "YCoordinate",
       "en" : "Y Coordinate"
     },
-    "subClasses" : [ "33" ],
+    "subClasses" : [ "35" ],
     "attributes" : [ "external" ],
-    "id" : "34",
+    "id" : "36",
     "superClasses" : [ "179" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/Thermocouple",
@@ -1877,13 +1877,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "A materials property is an intensive property of a material, i.e., a physical property that does not depend on the amount of the material. These quantitative properties may be used as a metric by which the benefits of one material versus another can be compared, thereby aiding in materials selection.",
+        "language" : "de",
+        "value" : "Eine Materialeigenschaft ist eine intensive Eigenschaft eines Materials, d. h. eine physikalische Eigenschaft, die nicht von der Menge des Materials abhängt. Diese quantitativen Eigenschaften können als Maßstab verwendet werden, um die Vorteile eines Materials mit denen eines anderen zu vergleichen und so die Materialauswahl zu erleichtern.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Eine Materialeigenschaft ist eine intensive Eigenschaft eines Materials, d. h. eine physikalische Eigenschaft, die nicht von der Menge des Materials abhängt. Diese quantitativen Eigenschaften können als Maßstab verwendet werden, um die Vorteile eines Materials mit denen eines anderen zu vergleichen und so die Materialauswahl zu erleichtern.",
+        "language" : "en",
+        "value" : "A materials property is an intensive property of a material, i.e., a physical property that does not depend on the amount of the material. These quantitative properties may be used as a metric by which the benefits of one material versus another can be compared, thereby aiding in materials selection.",
         "type" : "label"
       } ]
     },
@@ -2232,7 +2232,7 @@
       "en" : "Digital Material Identifier"
     },
     "intersection" : [ "78" ],
-    "attributes" : [ "intersection", "external" ],
+    "attributes" : [ "external", "intersection" ],
     "id" : "221",
     "superClasses" : [ "78" ]
   }, {
@@ -2265,7 +2265,7 @@
       "en" : "DataCite Metadata"
     },
     "intersection" : [ "5" ],
-    "attributes" : [ "intersection", "external" ],
+    "attributes" : [ "external", "intersection" ],
     "id" : "178",
     "superClasses" : [ "5" ]
   }, {
@@ -2318,13 +2318,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "bleibende Verlängerung der Messlänge nach dem Bruch (L_u − L_o), angegeben in Prozent, bezogen auf die Anfangsmesslänge",
+        "language" : "en",
+        "value" : "Symbol: A",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Symbol: A",
+        "language" : "de",
+        "value" : "bleibende Verlängerung der Messlänge nach dem Bruch (L_u − L_o), angegeben in Prozent, bezogen auf die Anfangsmesslänge",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -2360,13 +2360,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "any of various measuring instruments having two usually adjustable arms, legs, or jaws used especially to measure the dimensions of objects, such as diameters or thicknesses",
+        "language" : "de",
+        "value" : "ein Messgerät mit zwei in der Regel verstellbaren Armen, Schenkeln oder Klemmbacken, das vor allem zur Messung der Abmessungen von Gegenständen, wie z. B. des Durchmessers oder der Dicke, verwendet wird",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "ein Messgerät mit zwei in der Regel verstellbaren Armen, Schenkeln oder Klemmbacken, das vor allem zur Messung der Abmessungen von Gegenständen, wie z. B. des Durchmessers oder der Dicke, verwendet wird",
+        "language" : "en",
+        "value" : "any of various measuring instruments having two usually adjustable arms, legs, or jaws used especially to measure the dimensions of objects, such as diameters or thicknesses",
         "type" : "label"
       } ]
     },
@@ -2417,6 +2417,38 @@
     "id" : "239",
     "superClasses" : [ "240" ]
   }, {
+    "iri" : "https://w3id.org/pmd/co/RegionOfInterest",
+    "baseIri" : "https://w3id.org/pmd/co",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pmd/co",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Some region of interest (ROI) in an image. Describe the ROI by use of Web Annotation Vocabulary (https://www.w3.org/TR/annotation-vocab/). The ROI is understood as the target of a (body-less) annotation. \n\nThe web annotation model suggests the use of different fragment specifications (https://www.w3.org/TR/annotation-model/#fragment-selector), however we suggest to prefer media fragments (https://www.w3.org/TR/media-frags/).",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : ":image1  a pmd:Image\n:roi1 a pmd:RegionOfInterest .\n:roi1 oa:hasSource :image1 ;\n         oa:hasSelector [\n            a oa:FragmentSelector ;\n            dcterms:conformsTo <http://www.w3.org/TR/media-frags/> ;\n            rdf:value \"xywh=160,120,320,240\" ] ] .",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Betrachteter Bereich",
+      "IRI-based" : "RegionOfInterest",
+      "en" : "Region of Interest"
+    },
+    "attributes" : [ "external" ],
+    "id" : "208",
+    "superClasses" : [ "166" ]
+  }, {
     "iri" : "https://w3id.org/pmd/co/Method",
     "baseIri" : "https://w3id.org/pmd/co",
     "instances" : 0,
@@ -2449,38 +2481,6 @@
     "attributes" : [ "external" ],
     "id" : "190",
     "superClasses" : [ "5" ]
-  }, {
-    "iri" : "https://w3id.org/pmd/co/RegionOfInterest",
-    "baseIri" : "https://w3id.org/pmd/co",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/pmd/co",
-        "type" : "iri"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "Some region of interest (ROI) in an image. Describe the ROI by use of Web Annotation Vocabulary (https://www.w3.org/TR/annotation-vocab/). The ROI is understood as the target of a (body-less) annotation. \n\nThe web annotation model suggests the use of different fragment specifications (https://www.w3.org/TR/annotation-model/#fragment-selector), however we suggest to prefer media fragments (https://www.w3.org/TR/media-frags/).",
-        "type" : "label"
-      } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : ":image1  a pmd:Image\n:roi1 a pmd:RegionOfInterest .\n:roi1 oa:hasSource :image1 ;\n         oa:hasSelector [\n            a oa:FragmentSelector ;\n            dcterms:conformsTo <http://www.w3.org/TR/media-frags/> ;\n            rdf:value \"xywh=160,120,320,240\" ] ] .",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "de" : "Betrachteter Bereich",
-      "IRI-based" : "RegionOfInterest",
-      "en" : "Region of Interest"
-    },
-    "attributes" : [ "external" ],
-    "id" : "208",
-    "superClasses" : [ "166" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/TensileTestingMachine",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -2722,13 +2722,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This property describes the value of the slope of the first linear increasing part (‘elastic part’) in the stress-percentage extension curve obtained during a tensile test. In the elastic part of the stress‐percentage extension curve, the value of the slope may not necessarily represent the modulus of elasticity. This value may closely agree with the value of the modulus of elasticity if optimal conditions were used.",
+        "language" : "de",
+        "value" : "Diese Eigenschaft beschreibt den Wert der Steigung des ersten linear ansteigenden Teils (\"elastischer Teil\") in der bei einem Zugversuch erhaltenen Spannungs-Dehnungs-Kurve. Im elastischen Teil der Spannungs-Dehnungs-Kurve muss der Wert der Steigung nicht unbedingt dem Elastizitätsmodul entsprechen. Dieser Wert kann mit dem Wert des Elastizitätsmoduls (nur) sehr gut übereinstimmen, wenn optimale Bedingungen herrschten.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Eigenschaft beschreibt den Wert der Steigung des ersten linear ansteigenden Teils (\"elastischer Teil\") in der bei einem Zugversuch erhaltenen Spannungs-Dehnungs-Kurve. Im elastischen Teil der Spannungs-Dehnungs-Kurve muss der Wert der Steigung nicht unbedingt dem Elastizitätsmodul entsprechen. Dieser Wert kann mit dem Wert des Elastizitätsmoduls (nur) sehr gut übereinstimmen, wenn optimale Bedingungen herrschten.",
+        "language" : "en",
+        "value" : "This property describes the value of the slope of the first linear increasing part (‘elastic part’) in the stress-percentage extension curve obtained during a tensile test. In the elastic part of the stress‐percentage extension curve, the value of the slope may not necessarily represent the modulus of elasticity. This value may closely agree with the value of the modulus of elasticity if optimal conditions were used.",
         "type" : "label"
       } ]
     },
@@ -2983,13 +2983,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This property describes the region between the limits within which a quantity is measured, received or transmitted (typically by a process node, e.g. a machine), expressed by stating the lower and upper range values.",
+        "language" : "de",
+        "value" : "Diese Eigenschaft beschreibt den Bereich zwischen den Grenzen, innerhalb derer eine Größe gemessen, empfangen oder übertragen wird (typischerweise von einem Prozessknoten, z. B. einer Maschine), ausgedrückt durch die Angabe des unteren und oberen Bereichswertes.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Eigenschaft beschreibt den Bereich zwischen den Grenzen, innerhalb derer eine Größe gemessen, empfangen oder übertragen wird (typischerweise von einem Prozessknoten, z. B. einer Maschine), ausgedrückt durch die Angabe des unteren und oberen Bereichswertes.",
+        "language" : "en",
+        "value" : "This property describes the region between the limits within which a quantity is measured, received or transmitted (typically by a process node, e.g. a machine), expressed by stating the lower and upper range values.",
         "type" : "label"
       } ]
     },
@@ -3020,13 +3020,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Chemical is relating to, used in, or produced by chemistry or the phenomena of chemistry Here specifically to the chemical properties of a material.",
+        "language" : "de",
+        "value" : "Chemisch ist ein Begriff, der sich auf die Chemie oder die chemischen Phänomene bezieht, in der Chemie verwendet wird oder durch sie erzeugt wird. Hier geht es speziell um die chemischen Eigenschaften eines Materials.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Chemisch ist ein Begriff, der sich auf die Chemie oder die chemischen Phänomene bezieht, in der Chemie verwendet wird oder durch sie erzeugt wird. Hier geht es speziell um die chemischen Eigenschaften eines Materials.",
+        "language" : "en",
+        "value" : "Chemical is relating to, used in, or produced by chemistry or the phenomena of chemistry Here specifically to the chemical properties of a material.",
         "type" : "label"
       } ]
     },
@@ -3057,6 +3057,11 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
+        "language" : "en",
+        "value" : "stress corresponding to the maximum force",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
         "language" : "de",
         "value" : "Spannung, die der Höchstkraft entspricht",
         "type" : "label"
@@ -3064,11 +3069,6 @@
         "identifier" : "definition",
         "language" : "en",
         "value" : "Symbol: R_m",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "stress corresponding to the maximum force",
         "type" : "label"
       } ]
     },
@@ -3135,13 +3135,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Eigenschaft ist ein Name oder Bezeichner eines Materialtyps, welcher den obersten Teil eines Bauteils (Beschichtung) bedeckt.",
+        "language" : "en",
+        "value" : "This property is a name or identifier of a material type which designates the most upper part of a component (coating).",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This property is a name or identifier of a material type which designates the most upper part of a component (coating).",
+        "language" : "de",
+        "value" : "Diese Eigenschaft ist ein Name oder Bezeichner eines Materialtyps, welcher den obersten Teil eines Bauteils (Beschichtung) bedeckt.",
         "type" : "label"
       } ]
     },
@@ -3172,13 +3172,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Biologisch bezieht sich auf die Biologie oder auf das Leben und lebende Prozesse. Hier speziell auf die biologischen Eigenschaften eines Materials.",
+        "language" : "en",
+        "value" : "Biological is relating to biology or to life and living processes. Here specifically to the biological properties of a material.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Biological is relating to biology or to life and living processes. Here specifically to the biological properties of a material.",
+        "language" : "de",
+        "value" : "Biologisch bezieht sich auf die Biologie oder auf das Leben und lebende Prozesse. Hier speziell auf die biologischen Eigenschaften eines Materials.",
         "type" : "label"
       } ]
     },
@@ -3213,7 +3213,7 @@
       "IRI-based" : "AnalysingProcess",
       "en" : "Analysing Process"
     },
-    "subClasses" : [ "231", "119", "242", "49", "250" ],
+    "subClasses" : [ "231", "119", "242", "40", "250" ],
     "attributes" : [ "external" ],
     "id" : "120",
     "superClasses" : [ "165" ]
@@ -3231,12 +3231,12 @@
       "definition" : [ {
         "identifier" : "definition",
         "language" : "en",
-        "value" : "Data acquired before / after a process either refering to the geometry of the object (e.g. ao, bo, do, au, bu, du, Lu) or as a register of the complete setup (e.g. sketches, photos or videos)",
+        "value" : "Data directly acquired during a process by sensors (time, force, length, temperature)",
         "type" : "label"
       }, {
         "identifier" : "definition",
         "language" : "en",
-        "value" : "Data directly acquired during a process by sensors (time, force, length, temperature)",
+        "value" : "Data acquired before / after a process either refering to the geometry of the object (e.g. ao, bo, do, au, bu, du, Lu) or as a register of the complete setup (e.g. sketches, photos or videos)",
         "type" : "label"
       } ]
     },
@@ -3287,13 +3287,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This property describes the designation of a test piece, usually given as human-readable identifier by humans.",
+        "language" : "de",
+        "value" : "Diese Eigenschaft beschreibt die Bezeichnung eines Prüfkörpers, die in der Regel als menschenlesbarer Identifikator von Menschen vergeben wird.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Eigenschaft beschreibt die Bezeichnung eines Prüfkörpers, die in der Regel als menschenlesbarer Identifikator von Menschen vergeben wird.",
+        "language" : "en",
+        "value" : "This property describes the designation of a test piece, usually given as human-readable identifier by humans.",
         "type" : "label"
       } ]
     },
@@ -3303,7 +3303,7 @@
       "en" : "Test Piece Name"
     },
     "intersection" : [ "78" ],
-    "attributes" : [ "intersection", "external" ],
+    "attributes" : [ "external", "intersection" ],
     "id" : "353",
     "superClasses" : [ "78" ]
   }, {
@@ -3356,7 +3356,7 @@
     "subClasses" : [ "354", "355", "351" ],
     "attributes" : [ "external" ],
     "id" : "352",
-    "superClasses" : [ "68" ]
+    "superClasses" : [ "69" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/Slide",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -3412,7 +3412,7 @@
       "en" : "Process Description"
     },
     "intersection" : [ "150" ],
-    "attributes" : [ "intersection", "external" ],
+    "attributes" : [ "external", "intersection" ],
     "id" : "357",
     "superClasses" : [ "150" ]
   }, {
@@ -3597,12 +3597,12 @@
       }, {
         "identifier" : "definition",
         "language" : "en",
-        "value" : "Symbol: e^._L_c",
+        "value" : "value of the increase of strain over the parallel length of the test piece per time based on the crosshead separation rate and the parallel length of the test piece",
         "type" : "label"
       }, {
         "identifier" : "definition",
         "language" : "en",
-        "value" : "value of the increase of strain over the parallel length of the test piece per time based on the crosshead separation rate and the parallel length of the test piece",
+        "value" : "Symbol: e^._L_c",
         "type" : "label"
       } ]
     },
@@ -3664,8 +3664,8 @@
       "en" : "Initiator"
     },
     "attributes" : [ "external" ],
-    "id" : "69",
-    "superClasses" : [ "67" ]
+    "id" : "70",
+    "superClasses" : [ "68" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/ModulusOfElasticity",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -3795,12 +3795,12 @@
       }, {
         "identifier" : "definition",
         "language" : "en",
-        "value" : "lowest value of stress during plastic yielding, ignoring any initial transient effects",
+        "value" : "Symbol: R_eL",
         "type" : "label"
       }, {
         "identifier" : "definition",
         "language" : "en",
-        "value" : "Symbol: R_eL",
+        "value" : "lowest value of stress during plastic yielding, ignoring any initial transient effects",
         "type" : "label"
       } ]
     },
@@ -3825,13 +3825,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This property describes a named value intended to distinguish between projects that are related to the project considered. For instance, two related projects could be a measurement project that is part of project with a broader scope.",
+        "language" : "de",
+        "value" : "Diese Eigenschaft beschreibt einen benannten Wert, der dazu dient, zwischen Projekten zu unterscheiden, die mit dem betrachteten Projekt in Relation stehen. Zwei in Relation stehende Projekte könnten zum Beispiel ein Messprojekt sein, das Teil eines Projekts mit einem breiteren Betrachtungsbereich ist.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Eigenschaft beschreibt einen benannten Wert, der dazu dient, zwischen Projekten zu unterscheiden, die mit dem betrachteten Projekt in Relation stehen. Zwei in Relation stehende Projekte könnten zum Beispiel ein Messprojekt sein, das Teil eines Projekts mit einem breiteren Betrachtungsbereich ist.",
+        "language" : "en",
+        "value" : "This property describes a named value intended to distinguish between projects that are related to the project considered. For instance, two related projects could be a measurement project that is part of project with a broader scope.",
         "type" : "label"
       } ]
     },
@@ -4008,7 +4008,7 @@
       "IRI-based" : "2DPixelCoordinates",
       "en" : "2D Pixel Coordinates"
     },
-    "subClasses" : [ "34", "398" ],
+    "subClasses" : [ "36", "398" ],
     "attributes" : [ "external" ],
     "id" : "179",
     "superClasses" : [ "397" ]
@@ -4068,13 +4068,13 @@
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Symbol: A_gt",
+        "language" : "de",
+        "value" : "gesamte Verlängerung (elastische plus plastische Verlängerung) der Extensometer-Messlänge bei Höchstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messlänge",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "gesamte Verlängerung (elastische plus plastische Verlängerung) der Extensometer-Messlänge bei Höchstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messlänge",
+        "language" : "en",
+        "value" : "Symbol: A_gt",
         "type" : "label"
       } ]
     },
@@ -4111,12 +4111,12 @@
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : "- the length of a specimen\n- the model number of a machine\n- a person involved in a process\n- a force on an object",
+        "value" : ":Length rdfs:subClass :ValueObject .\nex:vo1 a :Length .\nex:vo1 a :Measurement .\nex:vo1 a :PrimaryData .\nex:vo1 :hasUnit qudt:MilliM . \nex:vo1 :hasValue \"123.45\"\nex:spec1 a :Specimen .\nex:spec1 :hasCharacteristic ex:vo1 .",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "en",
-        "value" : ":Length rdfs:subClass :ValueObject .\nex:vo1 a :Length .\nex:vo1 a :Measurement .\nex:vo1 a :PrimaryData .\nex:vo1 :hasUnit qudt:MilliM . \nex:vo1 :hasValue \"123.45\"\nex:spec1 a :Specimen .\nex:spec1 :hasCharacteristic ex:vo1 .",
+        "value" : "- the length of a specimen\n- the model number of a machine\n- a person involved in a process\n- a force on an object",
         "type" : "label"
       } ]
     },
@@ -4126,41 +4126,10 @@
       "en" : "Value Object"
     },
     "union" : [ "15" ],
-    "subClasses" : [ "6", "401", "371", "214", "26", "397", "127", "176", "178", "78", "183", "51", "186", "188", "190", "36", "170", "138", "142", "144", "146", "148", "150", "152", "154", "158", "131", "136", "76", "81", "87", "93", "97", "101", "105", "109", "57", "62", "66", "4", "11", "15", "20", "2", "28", "32", "9", "362", "18" ],
+    "subClasses" : [ "6", "401", "371", "214", "26", "397", "127", "176", "178", "78", "183", "51", "186", "188", "190", "34", "170", "138", "142", "144", "146", "148", "150", "152", "154", "158", "131", "136", "76", "81", "87", "93", "97", "101", "105", "109", "57", "62", "66", "4", "11", "15", "20", "2", "28", "32", "9", "362", "18" ],
     "attributes" : [ "external", "union" ],
     "id" : "5",
     "superClasses" : [ "374" ]
-  }, {
-    "iri" : "https://w3id.org/pmd/co/TypeGaugeLengthMarks",
-    "baseIri" : "https://w3id.org/pmd/co",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/pmd/co",
-        "type" : "iri"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Eigenschaft wird verwendet, um die sichtbaren Markierungen zu beschreiben, die in der Regel während eines Zugversuchs zur Messung der Dehnung an den Prüfkörpern angebracht werden.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "This property is used to describe the visible markers usually attached to test pieces during a tensile test for elongation / extension measurements.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "de" : "Typ Der Messlängenmarkierungen",
-      "IRI-based" : "TypeGaugeLengthMarks",
-      "en" : "Type Gauge Length Marks"
-    },
-    "attributes" : [ "external" ],
-    "id" : "25",
-    "superClasses" : [ "26" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/WidthAfterFracture",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -4193,6 +4162,37 @@
     "id" : "155",
     "superClasses" : [ "81" ]
   }, {
+    "iri" : "https://w3id.org/pmd/co/TypeGaugeLengthMarks",
+    "baseIri" : "https://w3id.org/pmd/co",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pmd/co",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Diese Eigenschaft wird verwendet, um die sichtbaren Markierungen zu beschreiben, die in der Regel während eines Zugversuchs zur Messung der Dehnung an den Prüfkörpern angebracht werden.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "This property is used to describe the visible markers usually attached to test pieces during a tensile test for elongation / extension measurements.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Typ Der Messlängenmarkierungen",
+      "IRI-based" : "TypeGaugeLengthMarks",
+      "en" : "Type Gauge Length Marks"
+    },
+    "attributes" : [ "external" ],
+    "id" : "25",
+    "superClasses" : [ "26" ]
+  }, {
     "iri" : "https://w3id.org/pmd/co/LightMicroscopy",
     "baseIri" : "https://w3id.org/pmd/co",
     "instances" : 0,
@@ -4222,8 +4222,8 @@
       "en" : "Light Microscopy"
     },
     "attributes" : [ "external" ],
-    "id" : "50",
-    "superClasses" : [ "48" ]
+    "id" : "41",
+    "superClasses" : [ "39" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/Extension",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -4248,11 +4248,6 @@
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Increase in the extensometer gauge length at any moment during the test",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
         "language" : "de",
         "value" : "Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt des Versuchs",
         "type" : "label"
@@ -4260,6 +4255,11 @@
         "identifier" : "definition",
         "language" : "en",
         "value" : "Dimensional analysis: L\nUnit (e.g. SI): mm",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Increase in the extensometer gauge length at any moment during the test",
         "type" : "label"
       } ]
     },
@@ -4395,13 +4395,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Eine Ionenbindung ist eine chemische Bindung, die zwischen entgegengesetzt geladenen Stoffen aufgrund ihrer gegenseitigen elektrostatischen Anziehung entsteht.",
+        "language" : "en",
+        "value" : "Ionic bond is a chemical bond formed between oppositely charged species because of their mutual electrostatic attraction.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Ionic bond is a chemical bond formed between oppositely charged species because of their mutual electrostatic attraction.",
+        "language" : "de",
+        "value" : "Eine Ionenbindung ist eine chemische Bindung, die zwischen entgegengesetzt geladenen Stoffen aufgrund ihrer gegenseitigen elektrostatischen Anziehung entsteht.",
         "type" : "label"
       } ]
     },
@@ -4433,13 +4433,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This activity describes the process of and the measures taken to set a tangible object to pre-defined environmental conditions.",
+        "language" : "de",
+        "value" : "Diese Aktivität beschreibt den Prozess und die Maßnahmen, die ergriffen werden, um einen materiellen Gegenstand auf vordefinierte Umgebungsbedingungen einzustellen.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Aktivität beschreibt den Prozess und die Maßnahmen, die ergriffen werden, um einen materiellen Gegenstand auf vordefinierte Umgebungsbedingungen einzustellen.",
+        "language" : "en",
+        "value" : "This activity describes the process of and the measures taken to set a tangible object to pre-defined environmental conditions.",
         "type" : "label"
       } ]
     },
@@ -4462,7 +4462,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "40",
+    "id" : "43",
     "label" : {
       "undefined" : "Thing"
     }
@@ -4507,13 +4507,13 @@
     "superClasses" : [ "138" ]
   }, {
     "instances" : 0,
-    "union" : [ "424", "413" ],
-    "attributes" : [ "anonymous", "union" ],
+    "union" : [ "424", "404" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "423"
   }, {
     "instances" : 0,
     "union" : [ "83", "370", "165", "166", "5" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "425"
   }, {
     "iri" : "https://w3id.org/pmd/co/ThicknessAfterFracture",
@@ -4528,13 +4528,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This property describes the measured dimension in one direction of a test piece, as measured after the test.",
+        "language" : "de",
+        "value" : "Diese Eigenschaft beschreibt die gemessene Dimension in einer Richtung eines Prüfstücks, wie sie vor der Prüfung gemessen wurde.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Eigenschaft beschreibt die gemessene Dimension in einer Richtung eines Prüfstücks, wie sie vor der Prüfung gemessen wurde.",
+        "language" : "en",
+        "value" : "This property describes the measured dimension in one direction of a test piece, as measured after the test.",
         "type" : "label"
       } ]
     },
@@ -4650,7 +4650,7 @@
       "en" : "Specimen Name"
     },
     "intersection" : [ "78" ],
-    "attributes" : [ "intersection", "external" ],
+    "attributes" : [ "external", "intersection" ],
     "id" : "428",
     "superClasses" : [ "78" ]
   }, {
@@ -4756,11 +4756,6 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Spannung, bei der die gesamte Extensometer-Dehnung (elastische und plastische Extensometer-Dehnung) einem vorgegebenen Prozentanteil der Extensometer-Messlänge entspricht\n\nAnmerkung: Der Index wird durch den Zahlenwert ergänzt, der den vorgegebenen Zahlenwert der gesamten Extensometer-Dehnung in Prozent angibt, z. B. R_t_0,5.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
         "language" : "en",
         "value" : "Symbol: R_t",
         "type" : "label"
@@ -4768,6 +4763,11 @@
         "identifier" : "definition",
         "language" : "en",
         "value" : "stress at which total extension (elastic extension plus plastic extension) is equal to a specified percentage of the extensometer gauge length\n\nNote: A suffix is added to the subscript to indicate the prescribed percentage, e.g. R_t_0.5.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Spannung, bei der die gesamte Extensometer-Dehnung (elastische und plastische Extensometer-Dehnung) einem vorgegebenen Prozentanteil der Extensometer-Messlänge entspricht\n\nAnmerkung: Der Index wird durch den Zahlenwert ergänzt, der den vorgegebenen Zahlenwert der gesamten Extensometer-Dehnung in Prozent angibt, z. B. R_t_0,5.",
         "type" : "label"
       } ]
     },
@@ -4802,7 +4802,7 @@
       "IRI-based" : "ProcessingNode",
       "en" : "Processing Node"
     },
-    "subClasses" : [ "292", "441", "82", "258", "259", "171", "356", "54", "442", "404" ],
+    "subClasses" : [ "292", "441", "82", "258", "259", "171", "356", "54", "442", "408" ],
     "attributes" : [ "external" ],
     "id" : "83",
     "superClasses" : [ "374" ]
@@ -4904,13 +4904,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "A colloquial, human-generated, descriptive text qualifying the nature of a process instance used as an identifier that is not strictly intended to be unique, e.g. “1050°C30 840°C10/ÖL”.",
+        "language" : "de",
+        "value" : "Ein umgangssprachlicher, von Menschen erstellter, beschreibender Text, der die Art einer Prozessinstanz qualifiziert, die als Kennung verwendet wird, die nicht unbedingt eindeutig sein muss, z.B. “1050°C30 840°C10/ÖL”.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Ein umgangssprachlicher, von Menschen erstellter, beschreibender Text, der die Art einer Prozessinstanz qualifiziert, die als Kennung verwendet wird, die nicht unbedingt eindeutig sein muss, z.B. “1050°C30 840°C10/ÖL”.",
+        "language" : "en",
+        "value" : "A colloquial, human-generated, descriptive text qualifying the nature of a process instance used as an identifier that is not strictly intended to be unique, e.g. “1050°C30 840°C10/ÖL”.",
         "type" : "label"
       } ]
     },
@@ -4920,7 +4920,7 @@
       "en" : "Process Identifier"
     },
     "intersection" : [ "78" ],
-    "attributes" : [ "intersection", "external" ],
+    "attributes" : [ "external", "intersection" ],
     "id" : "452",
     "superClasses" : [ "78" ]
   }, {
@@ -5100,13 +5100,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The relevant structure of materials has a different length scale depending on the material. The structure and composition of a material can be determined by microscopy or spectroscopy.",
+        "language" : "de",
+        "value" : "Die relevante Struktur von Materialien hat je nach Material eine unterschiedliche Längenskala. Die Struktur und Zusammensetzung eines Materials kann durch Mikroskopie oder Spektroskopie bestimmt werden.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Die relevante Struktur von Materialien hat je nach Material eine unterschiedliche Längenskala. Die Struktur und Zusammensetzung eines Materials kann durch Mikroskopie oder Spektroskopie bestimmt werden.",
+        "language" : "en",
+        "value" : "The relevant structure of materials has a different length scale depending on the material. The structure and composition of a material can be determined by microscopy or spectroscopy.",
         "type" : "label"
       } ]
     },
@@ -5243,13 +5243,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Entität beschreibt ein Bauelement / Teil, mit dem etwas, normalerweise ein materielles Objekt, fest gegriffen oder eingespannt wird. Typischerweise sind Halterungen, Klemm- bzw. Spannsysteme Teil eines Befestigungssystems (Prozessknoten), das sich auf ein Prüfsystem bezieht.",
+        "language" : "en",
+        "value" : "This entity describes a part by which something, usually a tangible object, is grasped. Typically, grips are part of a mounting system (process node) referring to a testing system.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This entity describes a part by which something, usually a tangible object, is grasped. Typically, grips are part of a mounting system (process node) referring to a testing system.",
+        "language" : "de",
+        "value" : "Diese Entität beschreibt ein Bauelement / Teil, mit dem etwas, normalerweise ein materielles Objekt, fest gegriffen oder eingespannt wird. Typischerweise sind Halterungen, Klemm- bzw. Spannsysteme Teil eines Befestigungssystems (Prozessknoten), das sich auf ein Prüfsystem bezieht.",
         "type" : "label"
       } ]
     },
@@ -5297,7 +5297,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "350",
-    "superClasses" : [ "36" ]
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/MinorAxisDiameter",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -5428,7 +5428,7 @@
       "definition" : [ {
         "identifier" : "definition",
         "language" : "en",
-        "value" : "Symbol: R",
+        "value" : "increase of stress per time\n\nNote: Stress rate is only used in the elastic part of the test.",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -5438,7 +5438,7 @@
       }, {
         "identifier" : "definition",
         "language" : "en",
-        "value" : "increase of stress per time\n\nNote: Stress rate is only used in the elastic part of the test.",
+        "value" : "Symbol: R",
         "type" : "label"
       } ]
     },
@@ -5616,11 +5616,6 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Anfangsmesslänge des Dehnungsaufnehmers (Extensometer), die zum Messen der Verlängerung benutzt wird\n\nAnmerkung: Für die Bestimmung mehrerer Eigenschaften, die (teilweise oder vollständig) von der Verlängerung abhängig sind, z. B. R_p, A_e oder A_g, ist die Verwendung eines Extensometers zwingend erforderlich.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
         "language" : "en",
         "value" : "initial gauge length of the extensometer used for measurement of extension\n\nNote: For the determination of several properties which are based (partly or complete) on extension, e. g. R_p, A_e or A_g, the use of an extensometer is mandatory.",
         "type" : "label"
@@ -5628,6 +5623,11 @@
         "identifier" : "definition",
         "language" : "en",
         "value" : "Symbol: L_e",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "Anfangsmesslänge des Dehnungsaufnehmers (Extensometer), die zum Messen der Verlängerung benutzt wird\n\nAnmerkung: Für die Bestimmung mehrerer Eigenschaften, die (teilweise oder vollständig) von der Verlängerung abhängig sind, z. B. R_p, A_e oder A_g, ist die Verwendung eines Extensometers zwingend erforderlich.",
         "type" : "label"
       } ]
     },
@@ -5637,7 +5637,7 @@
       "en" : "Extensometer Gauge Length"
     },
     "attributes" : [ "external" ],
-    "id" : "410",
+    "id" : "411",
     "superClasses" : [ "254" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/NodeType",
@@ -5839,7 +5839,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "317",
-    "superClasses" : [ "36" ]
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "http://qudt.org/schema/qudt/Unit",
     "baseIri" : "http://qudt.org/schema/qudt",
@@ -5925,13 +5925,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Amorphous materials have an internal structure consisting of interconnected structural blocks that can be similar to the basic structural units found in the corresponding crystalline phase of the same compound. Unlike in crystalline materials, however, no long-range order exists. Amorphous materials therefore cannot be defined by a finite unit cell. ",
+        "language" : "de",
+        "value" : "Amorphe Materialien haben eine innere Struktur, die aus miteinander verbundenen Strukturblöcken besteht, die den grundlegenden Struktureinheiten in der entsprechenden kristallinen Phase der gleichen Verbindung ähnlich sein können. Anders als bei kristallinen Materialien besteht jedoch keine langfristige Ordnung. Amorphe Materialien können daher nicht durch eine bestimmte Einheitszelle definiert werden. ",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Amorphe Materialien haben eine innere Struktur, die aus miteinander verbundenen Strukturblöcken besteht, die den grundlegenden Struktureinheiten in der entsprechenden kristallinen Phase der gleichen Verbindung ähnlich sein können. Anders als bei kristallinen Materialien besteht jedoch keine langfristige Ordnung. Amorphe Materialien können daher nicht durch eine bestimmte Einheitszelle definiert werden. ",
+        "language" : "en",
+        "value" : "Amorphous materials have an internal structure consisting of interconnected structural blocks that can be similar to the basic structural units found in the corresponding crystalline phase of the same compound. Unlike in crystalline materials, however, no long-range order exists. Amorphous materials therefore cannot be defined by a finite unit cell. ",
         "type" : "label"
       } ]
     },
@@ -5960,6 +5960,17 @@
         "value" : "DIN EN ISO 6892-1:2019",
         "type" : "label"
       } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "extension expressed as a percentage of the extensometer gauge length\n\nNote: The percentage extension is commonly called engineering strain.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "in Prozent angegebene Verlängerung der Extensometer-Messlänge\n\nAnmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bezeichnet.",
+        "type" : "label"
+      } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "de",
@@ -5969,17 +5980,6 @@
         "identifier" : "altLabel",
         "language" : "en",
         "value" : "(engineering) strain",
-        "type" : "label"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "de",
-        "value" : "in Prozent angegebene Verlängerung der Extensometer-Messlänge\n\nAnmerkung: Die Extensometer-Dehnung wird oftmals auch als technische Dehnung bezeichnet.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "extension expressed as a percentage of the extensometer gauge length\n\nNote: The percentage extension is commonly called engineering strain.",
         "type" : "label"
       } ]
     },
@@ -6055,32 +6055,6 @@
     "id" : "95",
     "superClasses" : [ "60" ]
   }, {
-    "iri" : "https://w3id.org/pmd/co/Specimen",
-    "baseIri" : "https://w3id.org/pmd/co",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/pmd/co",
-        "type" : "iri"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "undefined",
-        "value" : "An object designed for a specific analysis.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "de" : "Prüfling",
-      "IRI-based" : "Specimen",
-      "en" : "Specimen"
-    },
-    "attributes" : [ "external" ],
-    "id" : "424",
-    "superClasses" : [ "493" ]
-  }, {
     "iri" : "https://w3id.org/pmd/co/Identifier",
     "baseIri" : "https://w3id.org/pmd/co",
     "instances" : 0,
@@ -6107,6 +6081,32 @@
     "attributes" : [ "external" ],
     "id" : "78",
     "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/pmd/co/Specimen",
+    "baseIri" : "https://w3id.org/pmd/co",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pmd/co",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "An object designed for a specific analysis.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Prüfling",
+      "IRI-based" : "Specimen",
+      "en" : "Specimen"
+    },
+    "attributes" : [ "external" ],
+    "id" : "424",
+    "superClasses" : [ "493" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/MaterialQuality",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -6245,12 +6245,12 @@
       "definition" : [ {
         "identifier" : "definition",
         "language" : "en",
-        "value" : "Tensile tests (tension tests) on materials provide information on their strength, ductility as well as other characteristic values under uniaxial tensile stress.",
+        "value" : "The tensile test involves straining a test piece by tensile force, generally to fracture, for the determination of one or more mechanical properties specified by the semantically related and defined terms.",
         "type" : "label"
       }, {
         "identifier" : "definition",
         "language" : "en",
-        "value" : "The tensile test involves straining a test piece by tensile force, generally to fracture, for the determination of one or more mechanical properties specified by the semantically related and defined terms.",
+        "value" : "Tensile tests (tension tests) on materials provide information on their strength, ductility as well as other characteristic values under uniaxial tensile stress.",
         "type" : "label"
       } ]
     },
@@ -6391,9 +6391,9 @@
       "IRI-based" : "Agent",
       "undefined" : "Agent"
     },
-    "subClasses" : [ "67", "352", "507" ],
+    "subClasses" : [ "68", "352", "507" ],
     "attributes" : [ "external" ],
-    "id" : "68"
+    "id" : "69"
   }, {
     "iri" : "https://w3id.org/pmd/co/Sample",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -6423,7 +6423,7 @@
       "IRI-based" : "Sample",
       "en" : "Sample"
     },
-    "subClasses" : [ "424", "413" ],
+    "subClasses" : [ "424", "404" ],
     "attributes" : [ "external" ],
     "id" : "493",
     "superClasses" : [ "238" ]
@@ -6446,13 +6446,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Eine Position oder ein Ort, der besetzt ist oder besetzt werden kann oder durch ein bestimmtes Merkmal gekennzeichnet ist.",
+        "language" : "en",
+        "value" : "A position or site occupied or available for occupancy or marked by some distinguishing feature.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "A position or site occupied or available for occupancy or marked by some distinguishing feature.",
+        "language" : "de",
+        "value" : "Eine Position oder ein Ort, der besetzt ist oder besetzt werden kann oder durch ein bestimmtes Merkmal gekennzeichnet ist.",
         "type" : "label"
       } ]
     },
@@ -6483,13 +6483,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Eine Methode zur Bestimmung der Druckfestigkeit, die in der Regel bei Materialien mit hoher Druck-, aber geringer Zugfestigkeit angewandt wird, wobei die Probe bis zum Versagen steigenden Druckkräften ausgesetzt wird.",
+        "language" : "en",
+        "value" : "A test to determine compressive strength, usually applied to materials of high compression but low tensile strength, in which the specimen is subjected to increasing compressive forces until failure occurs.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "A test to determine compressive strength, usually applied to materials of high compression but low tensile strength, in which the specimen is subjected to increasing compressive forces until failure occurs.",
+        "language" : "de",
+        "value" : "Eine Methode zur Bestimmung der Druckfestigkeit, die in der Regel bei Materialien mit hoher Druck-, aber geringer Zugfestigkeit angewandt wird, wobei die Probe bis zum Versagen steigenden Druckkräften ausgesetzt wird.",
         "type" : "label"
       } ]
     },
@@ -6530,7 +6530,7 @@
       "en" : "Final Process"
     },
     "intersection" : [ "165" ],
-    "attributes" : [ "intersection", "external" ],
+    "attributes" : [ "external", "intersection" ],
     "id" : "396",
     "superClasses" : [ "165" ]
   }, {
@@ -6552,13 +6552,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "rate (resp. rates) used during the test",
+        "language" : "de",
+        "value" : "während des Versuchs verwendete Geschwindigkeit(en)",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "während des Versuchs verwendete Geschwindigkeit(en)",
+        "language" : "en",
+        "value" : "rate (resp. rates) used during the test",
         "type" : "label"
       } ]
     },
@@ -6634,8 +6634,8 @@
       "en" : "Operator"
     },
     "attributes" : [ "external" ],
-    "id" : "70",
-    "superClasses" : [ "67" ]
+    "id" : "71",
+    "superClasses" : [ "68" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/Force",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -6688,11 +6688,6 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "plastische Verlängerung der Extensometer-Messlänge bei Höchstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messlänge",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
         "language" : "en",
         "value" : "Symbol: A_g",
         "type" : "label"
@@ -6700,6 +6695,11 @@
         "identifier" : "definition",
         "language" : "en",
         "value" : "plastic extension at maximum force, expressed as a percentage of the extensometer gauge length",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "plastische Verlängerung der Extensometer-Messlänge bei Höchstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messlänge",
         "type" : "label"
       } ]
     },
@@ -6750,13 +6750,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Eine Reihe von zielorientierten (absichtlichen) Aktivitäten und Interaktionen, um ein bestimmtes Ergebnis zu erzielen.",
+        "language" : "en",
+        "value" : "A series of goal-orientated (intent) activities and interactions to achieve a specific outcome.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "A series of goal-orientated (intent) activities and interactions to achieve a specific outcome.",
+        "language" : "de",
+        "value" : "Eine Reihe von zielorientierten (absichtlichen) Aktivitäten und Interaktionen, um ein bestimmtes Ergebnis zu erzielen.",
         "type" : "label"
       } ]
     },
@@ -6787,13 +6787,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Zunahme der mit einem Extensometer in der Extensometer-Messlänge gemessenen Dehnung je Zeiteinheit",
+        "language" : "en",
+        "value" : "increase of strain, measured with an extensometer, in extensometer gauge length, per time",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "increase of strain, measured with an extensometer, in extensometer gauge length, per time",
+        "language" : "de",
+        "value" : "Zunahme der mit einem Extensometer in der Extensometer-Messlänge gemessenen Dehnung je Zeiteinheit",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -6829,13 +6829,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The length of a straight line through the center of an object (test piece) as measured before a test.",
+        "language" : "de",
+        "value" : "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Prüfkörpers), die vor einer Prüfung gemessen wird.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Prüfkörpers), die vor einer Prüfung gemessen wird.",
+        "language" : "en",
+        "value" : "The length of a straight line through the center of an object (test piece) as measured before a test.",
         "type" : "label"
       } ]
     },
@@ -6903,13 +6903,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Metallic bond is the chemical bond typical of the metallic state and characterized by mobile valence electrons that hold the atoms together usually in crystal lattices and are responsible for the good electrical and heat conductivity of metals.",
+        "language" : "de",
+        "value" : "Metallische Bindung ist die für den metallischen Zustand typische chemische Bindung, die durch bewegliche Valenzelektronen gekennzeichnet ist, die die Atome in der Regel in Kristallgittern zusammenhalten und für die gute elektrische und Wärmeleitfähigkeit von Metallen verantwortlich sind.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Metallische Bindung ist die für den metallischen Zustand typische chemische Bindung, die durch bewegliche Valenzelektronen gekennzeichnet ist, die die Atome in der Regel in Kristallgittern zusammenhalten und für die gute elektrische und Wärmeleitfähigkeit von Metallen verantwortlich sind.",
+        "language" : "en",
+        "value" : "Metallic bond is the chemical bond typical of the metallic state and characterized by mobile valence electrons that hold the atoms together usually in crystal lattices and are responsible for the good electrical and heat conductivity of metals.",
         "type" : "label"
       } ]
     },
@@ -6940,13 +6940,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Entität beschreibt ein Werkzeug zur Durchführung präziser Messungen mit einer Spindel, die durch eine Feingewindeschraube bewegt wird.",
+        "language" : "en",
+        "value" : "This entity describes a tool for making precise measurements having a spindle moved by a finely threaded screw.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This entity describes a tool for making precise measurements having a spindle moved by a finely threaded screw.",
+        "language" : "de",
+        "value" : "Diese Entität beschreibt ein Werkzeug zur Durchführung präziser Messungen mit einer Spindel, die durch eine Feingewindeschraube bewegt wird.",
         "type" : "label"
       } ]
     },
@@ -6971,13 +6971,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This property is used to provide information on a test piece such as its geometric shape, classification, and other parameters, including specifications and nominal values. The information is provided with respect to corresponding standards.",
+        "language" : "de",
+        "value" : "Diese Eigenschaft wird verwendet, um Informationen über einen Prüfkörper zu liefern, wie z. B. seine geometrische Form, seine Klassifizierung und andere Parameter, einschließlich von Spezifikationen und Nennwerte. Die Informationen werden in Bezug auf die entsprechenden Normen bereitgestellt.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Eigenschaft wird verwendet, um Informationen über einen Prüfkörper zu liefern, wie z. B. seine geometrische Form, seine Klassifizierung und andere Parameter, einschließlich von Spezifikationen und Nennwerte. Die Informationen werden in Bezug auf die entsprechenden Normen bereitgestellt.",
+        "language" : "en",
+        "value" : "This property is used to provide information on a test piece such as its geometric shape, classification, and other parameters, including specifications and nominal values. The information is provided with respect to corresponding standards.",
         "type" : "label"
       } ]
     },
@@ -7047,13 +7047,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Surface roughness, often shortened to roughness, is a component of surface finish (surface texture). It is quantified by the deviations in the direction of the normal vector of a real surface from its ideal form. If these deviations are large, the surface is rough; if they are small, the surface is smooth.",
+        "language" : "de",
+        "value" : "Die Oberflächenrauheit, oft abgekürzt als Rauheit, ist eine Komponente zur Beschreibung der Oberflächenbeschaffenheit (Oberflächentextur). Sie wird durch die Abweichungen in der Richtung des Normalenvektors einer realen Oberfläche von ihrer idealen Form quantifiziert. Sind diese Abweichungen groß, ist die Oberfläche rau (große Rauheit), sind sie klein, ist die Oberfläche glatt (geringe Rauheit).",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Die Oberflächenrauheit, oft abgekürzt als Rauheit, ist eine Komponente zur Beschreibung der Oberflächenbeschaffenheit (Oberflächentextur). Sie wird durch die Abweichungen in der Richtung des Normalenvektors einer realen Oberfläche von ihrer idealen Form quantifiziert. Sind diese Abweichungen groß, ist die Oberfläche rau (große Rauheit), sind sie klein, ist die Oberfläche glatt (geringe Rauheit).",
+        "language" : "en",
+        "value" : "Surface roughness, often shortened to roughness, is a component of surface finish (surface texture). It is quantified by the deviations in the direction of the normal vector of a real surface from its ideal form. If these deviations are large, the surface is rough; if they are small, the surface is smooth.",
         "type" : "label"
       } ]
     },
@@ -7084,13 +7084,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Ein Original oder offizielles Papier, auf das man sich als Grundlage, Beweis oder Unterstützung von etwas stützt.",
+        "language" : "en",
+        "value" : "An original or official paper relied on as the basis, proof, or support of something",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "An original or official paper relied on as the basis, proof, or support of something",
+        "language" : "de",
+        "value" : "Ein Original oder offizielles Papier, auf das man sich als Grundlage, Beweis oder Unterstützung von etwas stützt.",
         "type" : "label"
       } ]
     },
@@ -7099,9 +7099,9 @@
       "IRI-based" : "Document",
       "en" : "Document"
     },
-    "subClasses" : [ "346", "350", "35", "317", "132" ],
+    "subClasses" : [ "346", "350", "33", "317", "132" ],
     "attributes" : [ "external" ],
-    "id" : "36",
+    "id" : "34",
     "superClasses" : [ "5" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/MediaMovement",
@@ -7255,9 +7255,9 @@
       "IRI-based" : "MicroscopyProcess",
       "en" : "Microscopy Process"
     },
-    "subClasses" : [ "48", "115" ],
+    "subClasses" : [ "39", "115" ],
     "attributes" : [ "external" ],
-    "id" : "49",
+    "id" : "40",
     "superClasses" : [ "120" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/SequenceNumber",
@@ -7304,6 +7304,11 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
+        "language" : "en",
+        "value" : "stress at which the plastic extension is equal to a specified percentage of the extensometer gauge length\n\nNote: A suffix is added to the subscript to indicate the prescribed percentage, e.g. R_p_0.2.\n\nSource: ISO 6892-1:2019",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
         "language" : "de",
         "value" : "Spannung, bei der die plastische Extensometer-Dehnung einem vorgegebenen Prozentanteil der Extensometer-Messlänge entspricht\n\nAnmerkung: Der Index wird durch den Zahlenwert ergänzt, der den vorgegebenen Zahlenwert der plastischen Extensometer-Dehnung in Prozent angibt, z. B. R_p_0,2.",
         "type" : "label"
@@ -7311,11 +7316,6 @@
         "identifier" : "definition",
         "language" : "en",
         "value" : "Symbol: R_p",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "stress at which the plastic extension is equal to a specified percentage of the extensometer gauge length\n\nNote: A suffix is added to the subscript to indicate the prescribed percentage, e.g. R_p_0.2.\n\nSource: ISO 6892-1:2019",
         "type" : "label"
       } ]
     },
@@ -7391,13 +7391,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Covalent bond is a chemical bond formed between atoms by the sharing of electrons.",
+        "language" : "de",
+        "value" : "Eine kovalente Bindung ist eine chemische Verbindung zwischen Atomen, die durch die gemeinsame Nutzung von Elektronen entsteht.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Eine kovalente Bindung ist eine chemische Verbindung zwischen Atomen, die durch die gemeinsame Nutzung von Elektronen entsteht.",
+        "language" : "en",
+        "value" : "Covalent bond is a chemical bond formed between atoms by the sharing of electrons.",
         "type" : "label"
       } ]
     },
@@ -7564,7 +7564,7 @@
       "IRI-based" : "Shape",
       "en" : "Shape"
     },
-    "subClasses" : [ "71", "203", "163", "210" ],
+    "subClasses" : [ "67", "203", "163", "210" ],
     "attributes" : [ "external" ],
     "id" : "20",
     "superClasses" : [ "5" ]
@@ -7581,13 +7581,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Eigenschaft beschreibt die gemessene Dimension in einer Richtung eines Prüfstücks, wie sie vor der Prüfung gemessen wurde.",
+        "language" : "en",
+        "value" : "This property describes the measured dimension in one direction of a test piece, as measured before the test.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This property describes the measured dimension in one direction of a test piece, as measured before the test.",
+        "language" : "de",
+        "value" : "Diese Eigenschaft beschreibt die gemessene Dimension in einer Richtung eines Prüfstücks, wie sie vor der Prüfung gemessen wurde.",
         "type" : "label"
       } ]
     },
@@ -7612,13 +7612,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This property describes the process of forming in line of the grips used to grasp a tangible object, such as a sample, specimen, or test piece. This process is typically part of the mounting process during testing, if applicable.",
+        "language" : "de",
+        "value" : "Diese Eigenschaft beschreibt den Prozess der Ausrichtung von Halterungen, die zum Fest-/Einspannen eines materiellen Objekts, wie z. B. einer Probe, eines Prüfkörpers oder eines Prüfstücks, verwendet werden. Dieser Vorgang ist in der Regel Teil des Montageprozesses während der Prüfung, falls ein solcher durchgeführt wird.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Eigenschaft beschreibt den Prozess der Ausrichtung von Halterungen, die zum Fest-/Einspannen eines materiellen Objekts, wie z. B. einer Probe, eines Prüfkörpers oder eines Prüfstücks, verwendet werden. Dieser Vorgang ist in der Regel Teil des Montageprozesses während der Prüfung, falls ein solcher durchgeführt wird.",
+        "language" : "en",
+        "value" : "This property describes the process of forming in line of the grips used to grasp a tangible object, such as a sample, specimen, or test piece. This process is typically part of the mounting process during testing, if applicable.",
         "type" : "label"
       } ]
     },
@@ -7743,13 +7743,13 @@
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "length between gauge length marks on the test piece measured at room temperature before the test",
+        "language" : "de",
+        "value" : "Länge zwischen den Marken zur Kennzeichnung der Messlänge auf der Probe, die vor dem Versuch bei Raumtemperatur gemessen wird",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Länge zwischen den Marken zur Kennzeichnung der Messlänge auf der Probe, die vor dem Versuch bei Raumtemperatur gemessen wird",
+        "language" : "en",
+        "value" : "length between gauge length marks on the test piece measured at room temperature before the test",
         "type" : "label"
       } ]
     },
@@ -7833,6 +7833,11 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
+        "language" : "en",
+        "value" : "Symbol: v_c",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
         "language" : "de",
         "value" : "Traversenweg je Zeiteinheit",
         "type" : "label"
@@ -7840,11 +7845,6 @@
         "identifier" : "definition",
         "language" : "en",
         "value" : "displacement of the crossheads per time",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "Symbol: v_c",
         "type" : "label"
       } ]
     },
@@ -8024,6 +8024,11 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
+        "language" : "de",
+        "value" : "Kraft zu einem beliebigen Zeitpunkt während des Versuchs dividiert durch den Anfangsquerschnitt (S_o) der Probe\n\nAnmerkung: Mit dem Begriff Spannung ist hier die technische Spannung ('Ingenieur-Spannung') gemeint.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
         "language" : "en",
         "value" : "At any moment during the test, force divided by the original cross-sectional area, S_o, of the test piece\n\nNote: Here, all references to stress are to engineering stress.",
         "type" : "label"
@@ -8036,11 +8041,6 @@
         "identifier" : "definition",
         "language" : "en",
         "value" : "Units: Pa (SI), psi",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "de",
-        "value" : "Kraft zu einem beliebigen Zeitpunkt während des Versuchs dividiert durch den Anfangsquerschnitt (S_o) der Probe\n\nAnmerkung: Mit dem Begriff Spannung ist hier die technische Spannung ('Ingenieur-Spannung') gemeint.",
         "type" : "label"
       } ]
     },
@@ -8134,7 +8134,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "507",
-    "superClasses" : [ "68" ]
+    "superClasses" : [ "69" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/ProjectIdentifier",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -8164,7 +8164,7 @@
       "en" : "Project Identifier"
     },
     "intersection" : [ "78" ],
-    "attributes" : [ "intersection", "external" ],
+    "attributes" : [ "external", "intersection" ],
     "id" : "470",
     "superClasses" : [ "78" ]
   }, {
@@ -8186,13 +8186,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Teil einer Probe mit bestimmten Dimensionen, bearbeitet oder unbearbeitet, der in einen erforderlichen Zustand gebracht wird, um einer bestimmten Prüfung unterzogen zu werden.",
+        "language" : "en",
+        "value" : "Part of a sample with specified dimensions, machined or un-machined, brought to a required condition for submission to a given test.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Part of a sample with specified dimensions, machined or un-machined, brought to a required condition for submission to a given test.",
+        "language" : "de",
+        "value" : "Teil einer Probe mit bestimmten Dimensionen, bearbeitet oder unbearbeitet, der in einen erforderlichen Zustand gebracht wird, um einer bestimmten Prüfung unterzogen zu werden.",
         "type" : "label"
       } ]
     },
@@ -8202,7 +8202,7 @@
       "en" : "Test Piece"
     },
     "attributes" : [ "external" ],
-    "id" : "413",
+    "id" : "404",
     "superClasses" : [ "493" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/NodeInfo",
@@ -8369,6 +8369,11 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
+        "language" : "en",
+        "value" : "This property describes the displacement of the crossheads of a testing machine.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
         "language" : "de",
         "value" : "Diese Eigenschaft beschreibt die Verschiebung der Traverse einer Prüfmaschine.",
         "type" : "label"
@@ -8376,11 +8381,6 @@
         "identifier" : "definition",
         "language" : "en",
         "value" : "Dimensional analysis: L\nUnit (e.g. SI): mm",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "This property describes the displacement of the crossheads of a testing machine.",
         "type" : "label"
       } ]
     },
@@ -8405,13 +8405,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Entität beschreibt ein Dokument, das Informationen über die Prüfung eines materiellen Objekts enthält, in der Regel versehen mit einem Prüfungsdatum, einem typischen Prüfungsintervall und dem Zustand des geprüften Objekts. Typischerweise wird ein solches Dokument für Prozessknoten verwendet.",
+        "language" : "en",
+        "value" : "This entity describes a document used to give information on the examination of a tangible object, usually including an examination date, a typical examination interval and the state of the examined object. Typically, this is used for process nodes.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This entity describes a document used to give information on the examination of a tangible object, usually including an examination date, a typical examination interval and the state of the examined object. Typically, this is used for process nodes.",
+        "language" : "de",
+        "value" : "Diese Entität beschreibt ein Dokument, das Informationen über die Prüfung eines materiellen Objekts enthält, in der Regel versehen mit einem Prüfungsdatum, einem typischen Prüfungsintervall und dem Zustand des geprüften Objekts. Typischerweise wird ein solches Dokument für Prozessknoten verwendet.",
         "type" : "label"
       } ]
     },
@@ -8422,7 +8422,7 @@
     },
     "attributes" : [ "external" ],
     "id" : "346",
-    "superClasses" : [ "36" ]
+    "superClasses" : [ "34" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/VolumeFraction",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -8505,11 +8505,6 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "gesamte Verlängerung (elastische plus plastische Verlängerung) der Extensometer-Messlänge beim Bruch, angegeben in Prozent, bezogen auf die Extensometer-Messlänge",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
         "language" : "en",
         "value" : "Symbol: A_t",
         "type" : "label"
@@ -8517,6 +8512,11 @@
         "identifier" : "definition",
         "language" : "en",
         "value" : "total extension (elastic extension plus plastic extension) at the moment of fracture, expressed as a percentage of the extensometer gauge length",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "de",
+        "value" : "gesamte Verlängerung (elastische plus plastische Verlängerung) der Extensometer-Messlänge beim Bruch, angegeben in Prozent, bezogen auf die Extensometer-Messlänge",
         "type" : "label"
       } ]
     },
@@ -8579,13 +8579,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "In cybernetics and control theory, a setpoint (SP;[1] also set point) is the desired or target value for an essential variable, or process value (PV) of a control system.",
+        "language" : "de",
+        "value" : "Sollwert bezeichnet allgemein den angestrebten Wert eines quantitativen Merkmales eines Systems, von dem der tatsächliche Istwert so wenig wie möglich abweichen soll. Der Sollwert wird von einem anderen System (z. B. Technik, Mensch) vorgegeben.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Sollwert bezeichnet allgemein den angestrebten Wert eines quantitativen Merkmales eines Systems, von dem der tatsächliche Istwert so wenig wie möglich abweichen soll. Der Sollwert wird von einem anderen System (z. B. Technik, Mensch) vorgegeben.",
+        "language" : "en",
+        "value" : "In cybernetics and control theory, a setpoint (SP;[1] also set point) is the desired or target value for an essential variable, or process value (PV) of a control system.",
         "type" : "label"
       } ]
     },
@@ -8636,13 +8636,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Der Durchmesser einer zweidimensionalen Form.",
+        "language" : "en",
+        "value" : "The perimeter of a two-dimensional shape is defined as the path or boundary that encloses the shape.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The perimeter of a two-dimensional shape is defined as the path or boundary that encloses the shape.",
+        "language" : "de",
+        "value" : "Der Durchmesser einer zweidimensionalen Form.",
         "type" : "label"
       } ]
     },
@@ -8831,7 +8831,7 @@
       "en" : "Chemical Object"
     },
     "intersection" : [ "5" ],
-    "attributes" : [ "intersection", "external" ],
+    "attributes" : [ "external", "intersection" ],
     "id" : "127",
     "superClasses" : [ "5" ]
   }, {
@@ -8853,11 +8853,6 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Symbol: L_c",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
         "language" : "de",
         "value" : "Länge des parallelen reduzierten Querschnitts der Probe\n\nAnmerkung: Bei unbearbeiteten Proben tritt an die Stelle der parallelen Länge der Abstand zwischen den Einspannungen.",
         "type" : "label"
@@ -8865,6 +8860,11 @@
         "identifier" : "definition",
         "language" : "en",
         "value" : "length of the parallel reduced section of the test piece\n\nNote: The concept of parallel length is replaced by the concept of distance between grips for unmachined test pieces.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Symbol: L_c",
         "type" : "label"
       } ]
     },
@@ -8928,17 +8928,17 @@
       "definition" : [ {
         "identifier" : "definition",
         "language" : "en",
+        "value" : "Symbol: A_e",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
         "value" : "For discontinuous yielding materials: extension between the start of yielding and the start of uniform work-hardening, expressed as a percentage of the extensometer gauge length",
         "type" : "label"
       }, {
         "identifier" : "definition",
         "language" : "de",
         "value" : "Bei Werkstoffen, die ein diskontinuierliches Fließen zeigen: Verlängerung der Extensometer-Messlänge zwischen dem Beginn örtlichen Fließens und dem Einsetzen gleichmäßiger Verfestigung, angegeben in Prozent, bezogen auf die Extensometer-Messlänge",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "Symbol: A_e",
         "type" : "label"
       } ]
     },
@@ -9065,8 +9065,8 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "length of the parallel portion of the test piece on which elongation is measured at any moment during the test",
+        "language" : "de",
+        "value" : "Länge des parallelen Teils der Probe, an dem zu einem beliebigen Zeitpunkt während des Versuchs die Verlängerung gemessen wird",
         "type" : "label"
       }, {
         "identifier" : "definition",
@@ -9075,8 +9075,8 @@
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Länge des parallelen Teils der Probe, an dem zu einem beliebigen Zeitpunkt während des Versuchs die Verlängerung gemessen wird",
+        "language" : "en",
+        "value" : "length of the parallel portion of the test piece on which elongation is measured at any moment during the test",
         "type" : "label"
       } ]
     },
@@ -9085,7 +9085,7 @@
       "IRI-based" : "GaugeLength",
       "en" : "Gauge Length"
     },
-    "subClasses" : [ "480", "369", "410" ],
+    "subClasses" : [ "480", "369", "411" ],
     "attributes" : [ "external" ],
     "id" : "254",
     "superClasses" : [ "101" ]
@@ -9108,11 +9108,6 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Symbol: R_p_0.1",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
         "language" : "de",
         "value" : "Spannung bei einer plastischen Extensometer-Dehnung, die 0,1 Prozent der Extensometer-Messlänge entspricht",
         "type" : "label"
@@ -9120,6 +9115,11 @@
         "identifier" : "definition",
         "language" : "en",
         "value" : "stress at which the plastic extension is equal to 0.1 percent of the extensometer gauge length",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Symbol: R_p_0.1",
         "type" : "label"
       } ]
     },
@@ -9151,17 +9151,17 @@
       "definition" : [ {
         "identifier" : "definition",
         "language" : "en",
-        "value" : "stress at which the plastic extension is equal to 0.2 percent of the extensometer gauge length",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
         "value" : "Symbol: R_p_0.2",
         "type" : "label"
       }, {
         "identifier" : "definition",
         "language" : "de",
         "value" : "Spannung bei einer plastischen Extensometer-Dehnung, die 0,2 Prozent der Extensometer-Messlänge entspricht",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "stress at which the plastic extension is equal to 0.2 percent of the extensometer gauge length",
         "type" : "label"
       } ]
     },
@@ -9216,7 +9216,7 @@
       "en" : "Load cell capacity in kN"
     },
     "intersection" : [ "188" ],
-    "attributes" : [ "intersection", "external" ],
+    "attributes" : [ "external", "intersection" ],
     "id" : "389",
     "superClasses" : [ "188" ]
   }, {
@@ -9232,13 +9232,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "The length of a straight line through the center of an object (test piece) as measured after a fracture occured during a test.",
+        "language" : "de",
+        "value" : "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Prüfstücks), gemessen nach einem Bruch, der während einer Prüfung aufgetreten ist.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Die Länge einer geraden Linie durch den Mittelpunkt eines Objekts (Prüfstücks), gemessen nach einem Bruch, der während einer Prüfung aufgetreten ist.",
+        "language" : "en",
+        "value" : "The length of a straight line through the center of an object (test piece) as measured after a fracture occured during a test.",
         "type" : "label"
       } ]
     },
@@ -9338,13 +9338,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "length between gauge length marks on the test piece measured after rupture, at room temperature, the two pieces having been carefully fitted back together so that their axes lie in a straight line",
+        "language" : "de",
+        "value" : "Länge zwischen den Marken zur Kennzeichnung der Messlänge auf der Probe, die nach dem Bruch bei Raumtemperatur gemessen wird, nachdem die beiden Probenbruchstücke sorgfältig so zusammengefügt wurden, dass ihre Achsen in einer Geraden liegen",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Länge zwischen den Marken zur Kennzeichnung der Messlänge auf der Probe, die nach dem Bruch bei Raumtemperatur gemessen wird, nachdem die beiden Probenbruchstücke sorgfältig so zusammengefügt wurden, dass ihre Achsen in einer Geraden liegen",
+        "language" : "en",
+        "value" : "length between gauge length marks on the test piece measured after rupture, at room temperature, the two pieces having been carefully fitted back together so that their axes lie in a straight line",
         "type" : "label"
       } ]
     },
@@ -9356,32 +9356,6 @@
     "attributes" : [ "external" ],
     "id" : "480",
     "superClasses" : [ "254" ]
-  }, {
-    "iri" : "https://w3id.org/pmd/co/AgingInterval",
-    "baseIri" : "https://w3id.org/pmd/co",
-    "instances" : 0,
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/pmd/co",
-        "type" : "iri"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "Timespan a Temperature during  an Aging Process is hold.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "de" : "Alterungsintervall",
-      "IRI-based" : "AgingInterval",
-      "en" : "Aging Interval"
-    },
-    "attributes" : [ "external" ],
-    "id" : "451",
-    "superClasses" : [ "450" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/CollectionInterfaceHint",
     "baseIri" : "https://w3id.org/pmd/co",
@@ -9409,6 +9383,32 @@
     "id" : "322",
     "superClasses" : [ "87" ]
   }, {
+    "iri" : "https://w3id.org/pmd/co/AgingInterval",
+    "baseIri" : "https://w3id.org/pmd/co",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pmd/co",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Timespan a Temperature during  an Aging Process is hold.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "de" : "Alterungsintervall",
+      "IRI-based" : "AgingInterval",
+      "en" : "Aging Interval"
+    },
+    "attributes" : [ "external" ],
+    "id" : "451",
+    "superClasses" : [ "450" ]
+  }, {
     "iri" : "https://w3id.org/pmd/co/ChangeOfTransverseDimension",
     "baseIri" : "https://w3id.org/pmd/co",
     "instances" : 0,
@@ -9427,13 +9427,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This value object describes a variation in the dimension of a test piece referring to its transversal axis affecting its cross-sectional area that may potentially occur during a tensile test. The ratio of the true plastic strain in width and the true plastic strain in thickness in a test piece loaded in uniaxial tension (vertical anisotropy) may be calculated using this information.",
+        "language" : "de",
+        "value" : "Dieses Wertobjekt beschreibt eine Variation der Abmessungen eines Prüfkörpers in Bezug auf seine Querachse, die sich auf seine Querschnittsfläche auswirkt und möglicherweise während eines Zugversuchs auftritt. Das Verhältnis der wahren plastischen Breitendehnung und der wahren plastischen Dickendehnung in einem in uniaxialem Zug beanspruchten Prüfkörper (vertikale Anisotropie) kann anhand dieser Information berechnet werden.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Dieses Wertobjekt beschreibt eine Variation der Abmessungen eines Prüfkörpers in Bezug auf seine Querachse, die sich auf seine Querschnittsfläche auswirkt und möglicherweise während eines Zugversuchs auftritt. Das Verhältnis der wahren plastischen Breitendehnung und der wahren plastischen Dickendehnung in einem in uniaxialem Zug beanspruchten Prüfkörper (vertikale Anisotropie) kann anhand dieser Information berechnet werden.",
+        "language" : "en",
+        "value" : "This value object describes a variation in the dimension of a test piece referring to its transversal axis affecting its cross-sectional area that may potentially occur during a tensile test. The ratio of the true plastic strain in width and the true plastic strain in thickness in a test piece loaded in uniaxial tension (vertical anisotropy) may be calculated using this information.",
         "type" : "label"
       } ]
     },
@@ -9475,7 +9475,7 @@
       "en" : "Load Cell"
     },
     "attributes" : [ "external" ],
-    "id" : "404",
+    "id" : "408",
     "superClasses" : [ "83" ]
   }, {
     "iri" : "https://w3id.org/pmd/co/Mechanical",
@@ -9527,13 +9527,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Diese Eigenschaft beschreibt den Bereich zwischen den Grenzen, innerhalb derer ein Prozessknoten (z. B. eine Maschine) für ihren vorgesehenen Zweck verwendet werden kann, ausgedrückt durch die Angabe der in Rede stehenden unteren und oberen Bereichswerte.",
+        "language" : "en",
+        "value" : "This property describes the region between the limits within which a process node (e.g., a machine) is capable of being used for its intended purpose, expressed by stating the lower and upper range values of interest.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "This property describes the region between the limits within which a process node (e.g., a machine) is capable of being used for its intended purpose, expressed by stating the lower and upper range values of interest.",
+        "language" : "de",
+        "value" : "Diese Eigenschaft beschreibt den Bereich zwischen den Grenzen, innerhalb derer ein Prozessknoten (z. B. eine Maschine) für ihren vorgesehenen Zweck verwendet werden kann, ausgedrückt durch die Angabe der in Rede stehenden unteren und oberen Bereichswerte.",
         "type" : "label"
       } ]
     },
@@ -9653,13 +9653,13 @@
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "Having the form of a circle.",
+        "language" : "de",
+        "value" : "Geformt wie ein Kreis.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "de",
-        "value" : "Geformt wie ein Kreis.",
+        "language" : "en",
+        "value" : "Having the form of a circle.",
         "type" : "label"
       } ]
     },
@@ -9718,7 +9718,7 @@
     "id" : "37",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "39",
+    "id" : "42",
     "type" : "owl:objectProperty"
   }, {
     "id" : "56",
@@ -9805,7 +9805,7 @@
     "id" : "137",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "41",
+    "id" : "44",
     "type" : "owl:objectProperty"
   }, {
     "id" : "141",
@@ -9832,10 +9832,10 @@
     "id" : "157",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "164",
+    "id" : "140",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "140",
+    "id" : "164",
     "type" : "owl:objectProperty"
   }, {
     "id" : "169",
@@ -10168,7 +10168,7 @@
     "id" : "392",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "44",
+    "id" : "47",
     "type" : "owl:objectProperty"
   }, {
     "id" : "402",
@@ -10180,16 +10180,16 @@
     "id" : "407",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "408",
-    "type" : "owl:someValuesFrom"
-  }, {
     "id" : "409",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "411",
+    "id" : "410",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "412",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "413",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "414",
@@ -10264,7 +10264,7 @@
     "id" : "446",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "43",
+    "id" : "46",
     "type" : "owl:objectProperty"
   }, {
     "id" : "447",
@@ -10405,7 +10405,7 @@
     "id" : "517",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "46",
+    "id" : "49",
     "type" : "owl:objectProperty"
   }, {
     "id" : "518",
@@ -10420,7 +10420,7 @@
     "id" : "521",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "42",
+    "id" : "45",
     "type" : "owl:objectProperty"
   }, {
     "id" : "526",
@@ -10681,198 +10681,198 @@
   "propertyAttribute" : [ {
     "range" : "2",
     "domain" : "1",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "0"
   }, {
     "range" : "5",
     "domain" : "4",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "3"
   }, {
     "range" : "9",
     "domain" : "8",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "7"
   }, {
     "range" : "5",
     "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "10"
   }, {
     "range" : "9",
     "domain" : "13",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "12"
   }, {
     "range" : "5",
     "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "14"
   }, {
     "range" : "18",
     "domain" : "17",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "16"
   }, {
     "range" : "5",
     "domain" : "20",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "19"
   }, {
     "range" : "18",
     "domain" : "22",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "21"
   }, {
     "range" : "5",
     "domain" : "2",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "23"
   }, {
     "range" : "26",
     "domain" : "25",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "24"
   }, {
     "range" : "5",
     "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "27"
   }, {
     "range" : "26",
     "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "29"
   }, {
     "range" : "5",
     "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "31"
   }, {
     "range" : "26",
     "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "37"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "40",
+    "range" : "43",
     "label" : {
       "IRI-based" : "topObjectProperty"
     },
-    "domain" : "40",
-    "subproperty" : [ "41", "42", "43", "44", "45", "46", "47" ],
+    "domain" : "43",
+    "subproperty" : [ "44", "45", "46", "47", "48", "49", "50" ],
     "attributes" : [ "external", "object" ],
-    "id" : "39"
+    "id" : "42"
   }, {
     "range" : "5",
     "domain" : "57",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "56"
   }, {
     "range" : "60",
     "domain" : "59",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "58"
   }, {
     "range" : "5",
     "domain" : "62",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "61"
   }, {
     "range" : "60",
     "domain" : "64",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "63"
   }, {
     "range" : "5",
     "domain" : "66",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "65"
   }, {
     "range" : "74",
     "domain" : "73",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "72"
   }, {
     "range" : "5",
     "domain" : "76",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "75"
   }, {
-    "range" : "34",
-    "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "36",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "79"
   }, {
     "range" : "5",
     "domain" : "81",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "80"
   }, {
     "range" : "60",
     "domain" : "84",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "85"
   }, {
     "range" : "5",
     "domain" : "87",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "86"
   }, {
     "range" : "60",
     "domain" : "91",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "90"
   }, {
     "range" : "5",
     "domain" : "93",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "92"
   }, {
     "range" : "60",
     "domain" : "95",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "94"
   }, {
     "range" : "5",
     "domain" : "97",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "96"
   }, {
     "range" : "60",
     "domain" : "99",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "98"
   }, {
     "range" : "5",
     "domain" : "101",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "100"
   }, {
     "range" : "60",
     "domain" : "103",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "102"
   }, {
     "range" : "5",
     "domain" : "105",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "104"
   }, {
     "range" : "60",
     "domain" : "107",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "106"
   }, {
     "range" : "5",
     "domain" : "109",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "108"
   }, {
     "range" : "60",
     "domain" : "111",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "110"
   }, {
     "iri" : "http://www.w3.org/ns/prov#endedAtTime",
@@ -10926,7 +10926,7 @@
       "undefined" : "endedAtTime"
     },
     "domain" : "113",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "112"
   }, {
     "iri" : "https://w3id.org/pmd/co/relatesToElement",
@@ -10951,27 +10951,27 @@
   }, {
     "range" : "5",
     "domain" : "131",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "130"
   }, {
     "range" : "4",
     "domain" : "134",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "133"
   }, {
     "range" : "5",
     "domain" : "136",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "135"
   }, {
     "range" : "5",
     "domain" : "138",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "137"
   }, {
     "iri" : "https://w3id.org/pmd/co/isParticipantOf",
     "baseIri" : "https://w3id.org/pmd/co",
-    "range" : "40",
+    "range" : "43",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -10984,54 +10984,74 @@
       "IRI-based" : "isParticipantOf",
       "en" : "is participant of"
     },
-    "superproperty" : [ "39" ],
-    "domain" : "40",
+    "superproperty" : [ "42" ],
+    "domain" : "43",
     "subproperty" : [ "139", "140" ],
     "attributes" : [ "external", "object" ],
-    "id" : "41"
+    "id" : "44"
   }, {
     "range" : "5",
     "domain" : "142",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "141"
   }, {
     "range" : "5",
     "domain" : "144",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "143"
   }, {
     "range" : "5",
     "domain" : "146",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "145"
   }, {
     "range" : "5",
     "domain" : "148",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "147"
   }, {
     "range" : "5",
     "domain" : "150",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "149"
   }, {
     "range" : "5",
     "domain" : "152",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "151"
   }, {
     "range" : "5",
     "domain" : "154",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "153"
   }, {
     "range" : "5",
     "domain" : "158",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "157"
   }, {
+    "iri" : "https://w3id.org/pmd/co/isInputOf",
+    "baseIri" : "https://w3id.org/pmd/co",
+    "range" : "43",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pmd/co",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isInputOf",
+      "en" : "is input of"
+    },
+    "superproperty" : [ "44" ],
+    "domain" : "43",
+    "attributes" : [ "external", "object" ],
+    "id" : "140"
+  }, {
     "iri" : "https://w3id.org/pmd/co/hasParticipant",
-    "inverse" : "41",
+    "inverse" : "44",
     "baseIri" : "https://w3id.org/pmd/co",
     "range" : "166",
     "annotations" : {
@@ -11057,74 +11077,54 @@
     "attributes" : [ "external", "object" ],
     "id" : "164"
   }, {
-    "iri" : "https://w3id.org/pmd/co/isInputOf",
-    "baseIri" : "https://w3id.org/pmd/co",
-    "range" : "40",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/pmd/co",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "isInputOf",
-      "en" : "is input of"
-    },
-    "superproperty" : [ "41" ],
-    "domain" : "40",
-    "attributes" : [ "external", "object" ],
-    "id" : "140"
-  }, {
     "range" : "5",
     "domain" : "170",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "169"
   }, {
     "range" : "5",
     "domain" : "127",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "172"
   }, {
     "range" : "5",
     "domain" : "176",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "175"
   }, {
     "range" : "5",
     "domain" : "178",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "177"
   }, {
     "range" : "5",
     "domain" : "78",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "181"
   }, {
     "range" : "5",
     "domain" : "183",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "182"
   }, {
     "range" : "5",
     "domain" : "51",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "184"
   }, {
     "range" : "5",
     "domain" : "186",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "185"
   }, {
     "range" : "5",
     "domain" : "188",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "187"
   }, {
     "range" : "5",
     "domain" : "190",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "189"
   }, {
     "iri" : "https://w3id.org/pmd/co/relatesTo",
@@ -11148,8 +11148,8 @@
     "id" : "129"
   }, {
     "range" : "5",
-    "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "193"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
@@ -11158,43 +11158,43 @@
     "label" : {
       "IRI-based" : "topDataProperty"
     },
-    "domain" : "40",
-    "attributes" : [ "datatype", "external" ],
+    "domain" : "43",
+    "attributes" : [ "external", "datatype" ],
     "id" : "196"
   }, {
     "range" : "20",
-    "domain" : "71",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "199"
   }, {
     "range" : "166",
     "domain" : "201",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "200"
   }, {
     "range" : "20",
     "domain" : "203",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "202"
   }, {
     "range" : "166",
     "domain" : "205",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "204"
   }, {
     "range" : "20",
     "domain" : "163",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "206"
   }, {
     "range" : "166",
     "domain" : "208",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "207"
   }, {
     "range" : "20",
     "domain" : "210",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "209"
   }, {
     "iri" : "https://w3id.org/pmd/co/compose",
@@ -11245,257 +11245,257 @@
   }, {
     "range" : "225",
     "domain" : "224",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "223"
   }, {
     "range" : "227",
     "domain" : "218",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "226"
   }, {
     "range" : "166",
     "domain" : "229",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "228"
   }, {
     "range" : "120",
     "domain" : "231",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "230"
   }, {
     "range" : "166",
     "domain" : "233",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "232"
   }, {
     "range" : "120",
     "domain" : "119",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "236"
   }, {
     "range" : "166",
     "domain" : "238",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "237"
   }, {
     "range" : "120",
     "domain" : "242",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "241"
   }, {
     "range" : "166",
     "domain" : "244",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "243"
   }, {
     "range" : "120",
-    "domain" : "49",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "40",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "245"
   }, {
     "range" : "166",
     "domain" : "247",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "246"
   }, {
     "range" : "120",
     "domain" : "250",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "249"
   }, {
     "range" : "166",
     "domain" : "252",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "251"
   }, {
     "range" : "101",
     "domain" : "254",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "253"
   }, {
     "range" : "28",
     "domain" : "256",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "255"
   }, {
     "range" : "101",
     "domain" : "261",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "260"
   }, {
     "range" : "28",
     "domain" : "234",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "262"
   }, {
     "range" : "101",
     "domain" : "264",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "263"
   }, {
     "range" : "225",
     "domain" : "266",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "265"
   }, {
     "range" : "101",
     "domain" : "268",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "267"
   }, {
     "range" : "225",
     "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "269"
   }, {
     "range" : "227",
     "domain" : "271",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "270"
   }, {
     "range" : "121",
     "domain" : "220",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "274"
   }, {
-    "range" : "49",
-    "domain" : "48",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "40",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "275"
   }, {
     "range" : "121",
     "domain" : "277",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "276"
   }, {
-    "range" : "49",
+    "range" : "40",
     "domain" : "115",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "278"
   }, {
     "range" : "121",
     "domain" : "280",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "279"
   }, {
     "range" : "218",
     "domain" : "282",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "281"
   }, {
     "range" : "174",
     "domain" : "173",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "283"
   }, {
     "range" : "218",
     "domain" : "285",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "284"
   }, {
     "range" : "174",
     "domain" : "287",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "286"
   }, {
     "range" : "101",
     "domain" : "289",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "288"
   }, {
     "range" : "28",
     "domain" : "291",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "290"
   }, {
     "range" : "259",
     "domain" : "257",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "293"
   }, {
     "range" : "87",
     "domain" : "272",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "294"
   }, {
     "range" : "146",
     "domain" : "296",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "295"
   }, {
     "range" : "87",
     "domain" : "298",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "297"
   }, {
     "range" : "146",
     "domain" : "300",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "299"
   }, {
     "range" : "87",
     "domain" : "216",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "301"
   }, {
     "range" : "146",
     "domain" : "303",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "302"
   }, {
     "range" : "87",
     "domain" : "217",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "304"
   }, {
     "range" : "146",
     "domain" : "306",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "305"
   }, {
     "range" : "87",
     "domain" : "273",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "307"
   }, {
     "range" : "146",
     "domain" : "309",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "308"
   }, {
     "range" : "131",
     "domain" : "312",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "311"
   }, {
-    "range" : "36",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "34",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "313"
   }, {
     "range" : "131",
     "domain" : "315",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "314"
   }, {
-    "range" : "36",
+    "range" : "34",
     "domain" : "317",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "316"
   }, {
     "range" : "131",
     "domain" : "319",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "318"
   }, {
-    "range" : "36",
+    "range" : "34",
     "domain" : "132",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "320"
   }, {
     "range" : "87",
     "domain" : "322",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "321"
   }, {
     "iri" : "https://w3id.org/pmd/co/executedBy",
@@ -11526,52 +11526,52 @@
   }, {
     "range" : "258",
     "domain" : "257",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "325"
   }, {
     "range" : "87",
     "domain" : "327",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "326"
   }, {
     "range" : "118",
     "domain" : "329",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "328"
   }, {
     "range" : "154",
     "domain" : "331",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "330"
   }, {
     "range" : "118",
     "domain" : "333",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "332"
   }, {
     "range" : "154",
     "domain" : "335",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "334"
   }, {
     "range" : "190",
     "domain" : "248",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "336"
   }, {
     "range" : "131",
     "domain" : "338",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "337"
   }, {
     "range" : "190",
     "domain" : "240",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "339"
   }, {
     "range" : "131",
     "domain" : "219",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "340"
   }, {
     "iri" : "https://w3id.org/pmd/co/hasMaxValue",
@@ -11595,68 +11595,68 @@
       "IRI-based" : "hasMaxValue",
       "en" : "has max value"
     },
-    "domain" : "40",
-    "attributes" : [ "datatype", "external" ],
+    "domain" : "43",
+    "attributes" : [ "external", "datatype" ],
     "id" : "341"
   }, {
     "range" : "190",
     "domain" : "194",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "343"
   }, {
     "range" : "131",
     "domain" : "227",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "344"
   }, {
-    "range" : "36",
+    "range" : "34",
     "domain" : "346",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "345"
   }, {
     "range" : "131",
     "domain" : "348",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "347"
   }, {
-    "range" : "36",
+    "range" : "34",
     "domain" : "350",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "349"
   }, {
     "range" : "5",
     "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "358"
   }, {
     "range" : "118",
     "domain" : "360",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "359"
   }, {
     "range" : "5",
     "domain" : "362",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "361"
   }, {
     "range" : "118",
     "domain" : "364",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "363"
   }, {
     "range" : "5",
     "domain" : "18",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "365"
   }, {
     "range" : "118",
     "domain" : "117",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "366"
   }, {
     "range" : "150",
     "domain" : "357",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "367"
   }, {
     "iri" : "https://w3id.org/pmd/co/relatesTo",
@@ -11714,7 +11714,7 @@
       "IRI-based" : "isCharacteristicOf",
       "en" : "is characteristic of"
     },
-    "superproperty" : [ "39" ],
+    "superproperty" : [ "42" ],
     "domain" : "377",
     "attributes" : [ "someValues", "external", "object" ],
     "id" : "376"
@@ -11746,12 +11746,12 @@
   }, {
     "range" : "287",
     "domain" : "380",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "379"
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasAssociatedWith",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "68",
+    "range" : "69",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -11776,7 +11776,7 @@
   }, {
     "range" : "165",
     "domain" : "190",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "384"
   }, {
     "iri" : "https://w3id.org/pmd/co/isCharacteristicOf",
@@ -11794,19 +11794,19 @@
       "IRI-based" : "isCharacteristicOf",
       "en" : "is characteristic of"
     },
-    "superproperty" : [ "39" ],
+    "superproperty" : [ "42" ],
     "domain" : "17",
     "attributes" : [ "someValues", "external", "object" ],
     "id" : "385"
   }, {
     "range" : "242",
     "domain" : "250",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "386"
   }, {
     "range" : "388",
     "domain" : "88",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "387"
   }, {
     "iri" : "https://w3id.org/pmd/co/relatesTo",
@@ -11829,19 +11829,19 @@
     "attributes" : [ "someValues", "external", "object" ],
     "id" : "390"
   }, {
-    "range" : "266",
-    "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "391"
-  }, {
     "range" : "224",
     "domain" : "15",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "391"
+  }, {
+    "range" : "266",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "392"
   }, {
     "iri" : "https://w3id.org/pmd/co/hasSuperordinateProcess",
     "baseIri" : "https://w3id.org/pmd/co",
-    "range" : "40",
+    "range" : "43",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -11860,13 +11860,13 @@
       "IRI-based" : "hasSuperordinateProcess",
       "en" : "has superordinate process"
     },
-    "superproperty" : [ "39" ],
-    "domain" : "40",
+    "superproperty" : [ "42" ],
+    "domain" : "43",
     "attributes" : [ "external", "object" ],
-    "id" : "44"
+    "id" : "47"
   }, {
     "iri" : "https://w3id.org/pmd/co/hasParticipant",
-    "inverse" : "41",
+    "inverse" : "44",
     "baseIri" : "https://w3id.org/pmd/co",
     "range" : "404",
     "annotations" : {
@@ -11893,7 +11893,7 @@
     "id" : "402"
   }, {
     "iri" : "https://w3id.org/pmd/co/hasParticipant",
-    "inverse" : "41",
+    "inverse" : "44",
     "baseIri" : "https://w3id.org/pmd/co",
     "range" : "406",
     "annotations" : {
@@ -11921,7 +11921,7 @@
   }, {
     "iri" : "https://w3id.org/pmd/co/isCharacteristicOf",
     "baseIri" : "https://w3id.org/pmd/co",
-    "range" : "404",
+    "range" : "408",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -11934,7 +11934,7 @@
       "IRI-based" : "isCharacteristicOf",
       "en" : "is characteristic of"
     },
-    "superproperty" : [ "39" ],
+    "superproperty" : [ "42" ],
     "domain" : "188",
     "attributes" : [ "someValues", "external", "object" ],
     "id" : "407"
@@ -11954,14 +11954,14 @@
       "IRI-based" : "isCharacteristicOf",
       "en" : "is characteristic of"
     },
-    "superproperty" : [ "39" ],
+    "superproperty" : [ "42" ],
     "domain" : "93",
     "attributes" : [ "someValues", "external", "object" ],
-    "id" : "408"
+    "id" : "409"
   }, {
     "iri" : "https://w3id.org/pmd/co/relatesTo",
     "baseIri" : "https://w3id.org/pmd/co",
-    "range" : "410",
+    "range" : "411",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -11977,39 +11977,12 @@
     "domain" : "131",
     "subproperty" : [ "192", "126" ],
     "attributes" : [ "someValues", "external", "object" ],
-    "id" : "409"
+    "id" : "410"
   }, {
     "iri" : "https://w3id.org/pmd/co/hasParticipant",
-    "inverse" : "41",
+    "inverse" : "44",
     "baseIri" : "https://w3id.org/pmd/co",
-    "range" : "257",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://w3id.org/pmd/co",
-        "type" : "iri"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "A relation between a process and an object, in which the objects is somehow involved in the process.",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasParticipant",
-      "en" : "has participant"
-    },
-    "domain" : "403",
-    "subproperty" : [ "167", "168" ],
-    "attributes" : [ "someValues", "external", "object" ],
-    "id" : "411"
-  }, {
-    "iri" : "https://w3id.org/pmd/co/hasParticipant",
-    "inverse" : "41",
-    "baseIri" : "https://w3id.org/pmd/co",
-    "range" : "413",
+    "range" : "408",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12033,9 +12006,36 @@
     "attributes" : [ "someValues", "external", "object" ],
     "id" : "412"
   }, {
+    "iri" : "https://w3id.org/pmd/co/hasParticipant",
+    "inverse" : "44",
+    "baseIri" : "https://w3id.org/pmd/co",
+    "range" : "257",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pmd/co",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A relation between a process and an object, in which the objects is somehow involved in the process.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasParticipant",
+      "en" : "has participant"
+    },
+    "domain" : "403",
+    "subproperty" : [ "167", "168" ],
+    "attributes" : [ "someValues", "external", "object" ],
+    "id" : "413"
+  }, {
     "range" : "220",
     "domain" : "123",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "414"
   }, {
     "iri" : "https://w3id.org/pmd/co/relatesTo",
@@ -12064,14 +12064,14 @@
     "label" : {
       "IRI-based" : "isPartOf"
     },
-    "superproperty" : [ "39" ],
+    "superproperty" : [ "42" ],
     "domain" : "371",
     "attributes" : [ "someValues", "external", "object" ],
     "id" : "416"
   }, {
     "iri" : "https://w3id.org/pmd/co/isOutputOf",
     "baseIri" : "https://w3id.org/pmd/co",
-    "range" : "40",
+    "range" : "43",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12084,8 +12084,8 @@
       "IRI-based" : "isOutputOf",
       "en" : "is output of"
     },
-    "superproperty" : [ "41" ],
-    "domain" : "40",
+    "superproperty" : [ "44" ],
+    "domain" : "43",
     "attributes" : [ "external", "object" ],
     "id" : "139"
   }, {
@@ -12150,7 +12150,7 @@
     "id" : "426"
   }, {
     "iri" : "https://w3id.org/pmd/co/hasParticipant",
-    "inverse" : "41",
+    "inverse" : "44",
     "baseIri" : "https://w3id.org/pmd/co",
     "range" : "55",
     "annotations" : {
@@ -12177,9 +12177,9 @@
     "id" : "427"
   }, {
     "iri" : "https://w3id.org/pmd/co/hasParticipant",
-    "inverse" : "41",
+    "inverse" : "44",
     "baseIri" : "https://w3id.org/pmd/co",
-    "range" : "257",
+    "range" : "404",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12220,7 +12220,7 @@
       "en" : "has value"
     },
     "domain" : "5",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "430"
   }, {
     "iri" : "https://w3id.org/pmd/co/relatesTo",
@@ -12245,13 +12245,13 @@
   }, {
     "range" : "224",
     "domain" : "266",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "432"
   }, {
     "iri" : "https://w3id.org/pmd/co/hasParticipant",
-    "inverse" : "41",
+    "inverse" : "44",
     "baseIri" : "https://w3id.org/pmd/co",
-    "range" : "413",
+    "range" : "257",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12294,9 +12294,9 @@
     "attributes" : [ "functional", "external", "object" ],
     "id" : "434"
   }, {
-    "range" : "413",
+    "range" : "404",
     "domain" : "424",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "435"
   }, {
     "iri" : "https://w3id.org/pmd/co/relatesTo",
@@ -12321,7 +12321,7 @@
   }, {
     "iri" : "https://w3id.org/pmd/co/relatesTo",
     "baseIri" : "https://w3id.org/pmd/co",
-    "range" : "410",
+    "range" : "411",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12341,7 +12341,7 @@
   }, {
     "iri" : "https://w3id.org/pmd/co/relatesTo",
     "baseIri" : "https://w3id.org/pmd/co",
-    "range" : "410",
+    "range" : "411",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12361,7 +12361,7 @@
   }, {
     "iri" : "https://w3id.org/pmd/co/relatesTo",
     "baseIri" : "https://w3id.org/pmd/co",
-    "range" : "410",
+    "range" : "411",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12416,12 +12416,12 @@
       "qualifiedForm" : [ {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#atTime",
+        "value" : "http://www.w3.org/ns/prov#Start",
         "type" : "iri"
       }, {
         "identifier" : "qualifiedForm",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/prov#Start",
+        "value" : "http://www.w3.org/ns/prov#atTime",
         "type" : "iri"
       } ]
     },
@@ -12430,31 +12430,31 @@
       "undefined" : "startedAtTime"
     },
     "domain" : "113",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "440"
   }, {
-    "range" : "67",
-    "domain" : "70",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "68",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "443"
   }, {
     "range" : "89",
     "domain" : "88",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "444"
   }, {
-    "range" : "67",
-    "domain" : "69",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "68",
+    "domain" : "70",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "445"
   }, {
     "range" : "89",
     "domain" : "388",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "446"
   }, {
     "iri" : "https://w3id.org/pmd/co/hasCharacteristic",
-    "inverse" : "45",
+    "inverse" : "48",
     "baseIri" : "https://w3id.org/pmd/co",
     "range" : "5",
     "annotations" : {
@@ -12469,229 +12469,229 @@
       "IRI-based" : "hasCharacteristic",
       "en" : "has characteristic"
     },
-    "superproperty" : [ "39" ],
+    "superproperty" : [ "42" ],
     "domain" : "425",
     "attributes" : [ "external", "object" ],
-    "id" : "43"
+    "id" : "46"
   }, {
     "range" : "171",
     "domain" : "180",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "447"
   }, {
     "range" : "171",
     "domain" : "74",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "448"
   }, {
     "range" : "53",
     "domain" : "55",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "449"
   }, {
     "range" : "51",
     "domain" : "52",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "453"
   }, {
     "range" : "54",
     "domain" : "53",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "457"
   }, {
     "range" : "78",
     "domain" : "428",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "458"
   }, {
     "range" : "78",
     "domain" : "378",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "459"
   }, {
-    "range" : "48",
-    "domain" : "50",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "39",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "460"
   }, {
     "range" : "78",
     "domain" : "462",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "461"
   }, {
     "range" : "78",
     "domain" : "452",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "463"
   }, {
     "range" : "78",
     "domain" : "221",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "464"
   }, {
     "range" : "138",
     "domain" : "466",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "465"
   }, {
     "range" : "78",
     "domain" : "353",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "467"
   }, {
     "range" : "138",
     "domain" : "421",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "468"
   }, {
     "range" : "78",
     "domain" : "470",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "469"
   }, {
     "range" : "125",
     "domain" : "472",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "471"
   }, {
     "range" : "125",
     "domain" : "124",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "473"
   }, {
     "range" : "125",
     "domain" : "475",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "474"
   }, {
     "range" : "148",
     "domain" : "478",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "477"
   }, {
     "range" : "254",
     "domain" : "480",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "479"
   }, {
     "range" : "254",
     "domain" : "369",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "481"
   }, {
     "range" : "254",
-    "domain" : "410",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "411",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "483"
   }, {
     "range" : "398",
     "domain" : "485",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "484"
   }, {
     "range" : "238",
     "domain" : "487",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "486"
   }, {
     "range" : "238",
     "domain" : "489",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "488"
   }, {
     "range" : "78",
     "domain" : "77",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "490"
   }, {
     "range" : "238",
     "domain" : "493",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "492"
   }, {
     "range" : "93",
     "domain" : "162",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "495"
   }, {
     "range" : "93",
     "domain" : "161",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "496"
   }, {
     "range" : "109",
     "domain" : "498",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "497"
   }, {
     "range" : "109",
     "domain" : "500",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "499"
   }, {
     "range" : "81",
     "domain" : "156",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "501"
   }, {
     "range" : "93",
     "domain" : "160",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "502"
   }, {
     "range" : "93",
     "domain" : "159",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "503"
   }, {
     "range" : "493",
     "domain" : "424",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "505"
   }, {
-    "range" : "68",
+    "range" : "69",
     "domain" : "507",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "506"
   }, {
     "range" : "81",
     "domain" : "155",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "508"
   }, {
     "range" : "493",
-    "domain" : "413",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "404",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "509"
   }, {
     "range" : "119",
     "domain" : "123",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "510"
   }, {
     "range" : "119",
     "domain" : "122",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "511"
   }, {
-    "range" : "68",
+    "range" : "69",
     "domain" : "352",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "512"
   }, {
-    "range" : "68",
-    "domain" : "67",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "69",
+    "domain" : "68",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "513"
   }, {
     "range" : "119",
     "domain" : "121",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "514"
   }, {
     "range" : "115",
     "domain" : "116",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "515"
   }, {
     "iri" : "https://w3id.org/pmd/co/hasComponent",
@@ -12721,12 +12721,12 @@
   }, {
     "range" : "123",
     "domain" : "403",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "517"
   }, {
     "iri" : "http://www.w3.org/ns/oa#hasSource",
     "baseIri" : "http://www.w3.org/ns/oa",
-    "range" : "40",
+    "range" : "43",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12738,34 +12738,34 @@
     "label" : {
       "IRI-based" : "hasSource"
     },
-    "superproperty" : [ "39" ],
-    "domain" : "40",
+    "superproperty" : [ "42" ],
+    "domain" : "43",
     "attributes" : [ "external", "object" ],
-    "id" : "46"
+    "id" : "49"
   }, {
     "range" : "171",
     "domain" : "222",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "518"
   }, {
     "range" : "171",
     "domain" : "406",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "519"
   }, {
     "range" : "171",
     "domain" : "235",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "520"
   }, {
     "range" : "171",
     "domain" : "522",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "521"
   }, {
     "iri" : "http://www.w3.org/ns/oa#hasSelector",
     "baseIri" : "http://www.w3.org/ns/oa",
-    "range" : "40",
+    "range" : "43",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12777,24 +12777,24 @@
     "label" : {
       "IRI-based" : "hasSelector"
     },
-    "superproperty" : [ "39" ],
-    "domain" : "40",
+    "superproperty" : [ "42" ],
+    "domain" : "43",
     "attributes" : [ "external", "object" ],
-    "id" : "42"
+    "id" : "45"
   }, {
     "range" : "109",
     "domain" : "504",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "526"
   }, {
     "range" : "109",
     "domain" : "372",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "527"
   }, {
     "range" : "4",
     "domain" : "373",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "528"
   }, {
     "iri" : "https://w3id.org/pmd/co/hasState",
@@ -12819,7 +12819,7 @@
     "iri" : "https://w3id.org/pmd/co/hasInput",
     "inverse" : "140",
     "baseIri" : "https://w3id.org/pmd/co",
-    "range" : "40",
+    "range" : "43",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12839,7 +12839,7 @@
       "en" : "has input"
     },
     "superproperty" : [ "164" ],
-    "domain" : "40",
+    "domain" : "43",
     "attributes" : [ "external", "object" ],
     "id" : "168"
   }, {
@@ -12870,7 +12870,7 @@
   }, {
     "iri" : "http://www.w3.org/ns/prov#wasAttributedTo",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "68",
+    "range" : "69",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -12914,57 +12914,57 @@
       "IRI-based" : "hasMinValue",
       "en" : "has min value"
     },
-    "domain" : "40",
-    "attributes" : [ "datatype", "external" ],
+    "domain" : "43",
+    "attributes" : [ "external", "datatype" ],
     "id" : "534"
   }, {
     "range" : "144",
     "domain" : "400",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "535"
   }, {
     "range" : "144",
     "domain" : "125",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "536"
   }, {
     "range" : "144",
     "domain" : "310",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "537"
   }, {
     "range" : "144",
     "domain" : "118",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "538"
   }, {
     "range" : "5",
     "domain" : "6",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "539"
   }, {
     "range" : "5",
     "domain" : "401",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "540"
   }, {
     "range" : "5",
     "domain" : "371",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "542"
   }, {
     "range" : "5",
     "domain" : "214",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "543"
   }, {
     "range" : "5",
     "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "544"
   }, {
     "iri" : "https://w3id.org/pmd/co/hasSubordinateProcess",
-    "inverse" : "44",
+    "inverse" : "47",
     "baseIri" : "https://w3id.org/pmd/co",
     "range" : "165",
     "annotations" : {
@@ -12991,182 +12991,182 @@
   }, {
     "range" : "5",
     "domain" : "397",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "546"
   }, {
     "range" : "144",
     "domain" : "60",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "547"
   }, {
     "range" : "165",
     "domain" : "393",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "548"
   }, {
     "range" : "165",
     "domain" : "394",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "549"
   }, {
     "range" : "165",
     "domain" : "381",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "550"
   }, {
     "range" : "165",
     "domain" : "174",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "551"
   }, {
     "range" : "165",
     "domain" : "395",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "552"
   }, {
     "range" : "165",
     "domain" : "396",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "553"
   }, {
     "range" : "179",
-    "domain" : "34",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "554"
   }, {
     "range" : "179",
     "domain" : "398",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "555"
   }, {
     "range" : "144",
     "domain" : "399",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "556"
   }, {
     "range" : "170",
     "domain" : "377",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "557"
   }, {
     "range" : "138",
     "domain" : "450",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "558"
   }, {
     "range" : "165",
     "domain" : "120",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "559"
   }, {
     "range" : "450",
     "domain" : "451",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "560"
   }, {
     "range" : "374",
     "domain" : "166",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "561"
   }, {
     "range" : "397",
     "domain" : "179",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "562"
   }, {
     "range" : "374",
     "domain" : "89",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "563"
   }, {
     "range" : "183",
     "domain" : "454",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "564"
   }, {
     "range" : "374",
     "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "565"
   }, {
     "range" : "183",
     "domain" : "455",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "566"
   }, {
-    "range" : "381",
-    "domain" : "382",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "240",
+    "domain" : "525",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "567"
   }, {
     "range" : "183",
     "domain" : "456",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "568"
   }, {
-    "range" : "381",
-    "domain" : "380",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "240",
+    "domain" : "239",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "569"
   }, {
     "range" : "183",
     "domain" : "198",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "570"
   }, {
-    "range" : "240",
-    "domain" : "525",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "381",
+    "domain" : "382",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "571"
   }, {
     "range" : "138",
     "domain" : "417",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "572"
   }, {
-    "range" : "240",
-    "domain" : "239",
-    "attributes" : [ "anonymous", "object" ],
+    "range" : "381",
+    "domain" : "380",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "573"
   }, {
     "range" : "138",
     "domain" : "195",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "574"
   }, {
     "range" : "188",
     "domain" : "389",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "575"
   }, {
     "range" : "138",
     "domain" : "476",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "576"
   }, {
     "range" : "216",
     "domain" : "215",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "577"
   }, {
     "range" : "83",
     "domain" : "442",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "578"
   }, {
     "range" : "374",
     "domain" : "83",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "579"
   }, {
     "range" : "83",
-    "domain" : "404",
-    "attributes" : [ "anonymous", "object" ],
+    "domain" : "408",
+    "attributes" : [ "object", "anonymous" ],
     "id" : "580"
   }, {
     "range" : "374",
     "domain" : "225",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "581"
   }, {
     "iri" : "https://w3id.org/pmd/co/hasUnit",
@@ -13196,77 +13196,77 @@
   }, {
     "range" : "83",
     "domain" : "292",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "583"
   }, {
     "range" : "352",
     "domain" : "354",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "584"
   }, {
     "range" : "83",
     "domain" : "441",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "585"
   }, {
     "range" : "352",
     "domain" : "355",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "586"
   }, {
     "range" : "83",
     "domain" : "82",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "587"
   }, {
     "range" : "352",
     "domain" : "351",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "588"
   }, {
     "range" : "83",
     "domain" : "258",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "589"
   }, {
     "range" : "442",
     "domain" : "482",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "590"
   }, {
     "range" : "83",
     "domain" : "259",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "591"
   }, {
     "range" : "113",
     "domain" : "370",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "592"
   }, {
     "range" : "83",
     "domain" : "171",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "593"
   }, {
     "range" : "113",
     "domain" : "165",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "594"
   }, {
     "range" : "83",
     "domain" : "356",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "595"
   }, {
     "range" : "216",
     "domain" : "533",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "596"
   }, {
     "range" : "83",
     "domain" : "54",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "597"
   }, {
     "iri" : "https://w3id.org/pmd/co/hasNextProcess",
@@ -13341,7 +13341,7 @@
   }, {
     "iri" : "http://www.w3.org/ns/prov#actedOnBehalfOf",
     "baseIri" : "http://www.w3.org/ns/prov",
-    "range" : "68",
+    "range" : "69",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -13354,64 +13354,64 @@
       "IRI-based" : "actedOnBehalfOf",
       "en" : "actedOnBehalfOf"
     },
-    "domain" : "68",
+    "domain" : "69",
     "attributes" : [ "external", "object" ],
     "id" : "600"
   }, {
     "range" : "280",
     "domain" : "277",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "601"
   }, {
     "range" : "123",
     "domain" : "277",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "602"
   }, {
     "range" : "220",
     "domain" : "277",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "603"
   }, {
     "range" : "280",
     "domain" : "122",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "604"
   }, {
     "range" : "123",
     "domain" : "122",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "605"
   }, {
     "range" : "220",
     "domain" : "122",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "606"
   }, {
     "range" : "123",
     "domain" : "280",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "607"
   }, {
     "range" : "220",
     "domain" : "280",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "608"
   }, {
     "range" : "374",
     "domain" : "113",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "609"
   }, {
     "range" : "122",
     "domain" : "277",
-    "attributes" : [ "anonymous", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "610"
   }, {
     "iri" : "https://w3id.org/pmd/co/hasOutput",
     "inverse" : "139",
     "baseIri" : "https://w3id.org/pmd/co",
-    "range" : "40",
+    "range" : "43",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -13431,7 +13431,7 @@
       "en" : "has output"
     },
     "superproperty" : [ "164" ],
-    "domain" : "40",
+    "domain" : "43",
     "attributes" : [ "external", "object" ],
     "id" : "167"
   } ]

@@ -6,11 +6,11 @@
 <https://w3id.org/pmd/co> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0002-9014-2920> .
 <https://w3id.org/pmd/co> <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0003-1649-6832> .
 <https://w3id.org/pmd/co> <http://purl.org/dc/elements/1.1/creator> "Jannis Grundmann" .
-<https://w3id.org/pmd/co> <http://purl.org/dc/terms/bibliographicCitation> "Bernd Bayerlein, Henk Birkholz, Jannis Grundmann, Thomas Hanke, Markus Schilling, Jörg Waitelonis. (March 10th, 2023) PMDco: platform material digital ontology. Version 1.1-a.1, https://w3id.org/pmd/co" .
+<https://w3id.org/pmd/co> <http://purl.org/dc/terms/bibliographicCitation> "Bernd Bayerlein, Henk Birkholz, Jannis Grundmann, Thomas Hanke, Markus Schilling, Jörg Waitelonis. (March 17th, 2023) PMDco: platform material digital ontology. Version 2.0.0-alpha1, https://w3id.org/pmd/co" .
 <https://w3id.org/pmd/co> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
 <https://w3id.org/pmd/co> <http://purl.org/dc/terms/title> "Platform Material Digital Core Ontology (pmdco)"@en .
-<https://w3id.org/pmd/co> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the current development version of the PMD core ontology.\nThe PMDco provides basic conceptualizations valid for the broad field of material science and engineering (MSE). It facilitates the interconnection of specific MSE application ontologies (AOs) with the very general concepts of established top level ontologies (TLOs), essential for interoperability. The PMDco class structure forms an comprehensible, extensible, semantic intermediate layer for the unified joining of MSE knowledge representations. Connection to the W3C Provenance Ontology (PROV-O) is provided. The PMDco design enables systematic integration of data and metadata on key MSE domain terms. Metadata is crucial for the reproduction of processes, experiments and simulations and thus for the reuse of data. PMDco at GitHub: https://github.com/materialdigital/core-ontology"@en .
-<https://w3id.org/pmd/co> <http://www.w3.org/2002/07/owl#versionInfo> "1.1-a.1" .
+<https://w3id.org/pmd/co> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a pre-release version of the PMD core ontology.\nThe PMDco provides basic conceptualizations valid for the broad field of material science and engineering (MSE). It facilitates the interconnection of specific MSE application ontologies (AOs) with the very general concepts of established top level ontologies (TLOs), essential for interoperability. The PMDco class structure forms an comprehensible, extensible, semantic intermediate layer for the unified joining of MSE knowledge representations. Connection to the W3C Provenance Ontology (PROV-O) is provided. The PMDco design enables systematic integration of data and metadata on key MSE domain terms. Metadata is crucial for the reproduction of processes, experiments and simulations and thus for the reuse of data. PMDco at GitHub: https://github.com/materialdigital/core-ontology"@en .
+<https://w3id.org/pmd/co> <http://www.w3.org/2002/07/owl#versionInfo> "2.0.0-alpha1" .
 # 
 # 
 # #################################################################
@@ -3252,6 +3252,25 @@ _:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://w3id.org/pmd/co/PixelUnit> <http://www.w3.org/2004/02/skos/core#definition> "In der digitalen Bildgebung ist ein Pixel (abgekürzt px), ein Pel oder ein Bildelement das kleinste adressierbare Element in einem Rasterbild oder der kleinste Punkt in einem alle Punkte adressierbaren Anzeigegerät. Bei den meisten digitalen Anzeigegeräten sind Pixel das kleinste Element, das durch Software manipuliert werden kann.\nHier wird es als eine Einheit von gezählten Pixeln bezeichnet. (Es handelt sich nicht um eine offiziell anerkannte Einheit.)"@de .
 <https://w3id.org/pmd/co/PixelUnit> <http://www.w3.org/2004/02/skos/core#definition> "In digital imaging, a pixel (abbreviated px), pel, or picture element is the smallest addressable element in a raster image, or the smallest point in an all points addressable display device. In most digital display devices, pixels are the smallest element that can be manipulated through software. Here it is referred to as a unit of counted pixels. (It is not an officially recognized unit)."@en .
 <https://w3id.org/pmd/co/PixelUnit> <https://w3id.org/pmd/co/definitionSource> "“Pixel” Wikipedia The Free Encyclopedia, https://en.wikipedia.org/wiki/Pixel. Accessed 13 Jan. 2023."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://orcid.org/0000-0001-7192-7143> <http://www.w3.org/2000/01/rdf-schema#label> "Jörg Waitelonis" .
+# 
+<https://orcid.org/0000-0002-3717-7104> <http://www.w3.org/2000/01/rdf-schema#label> "Bernd Bayerlein" .
+# 
+<https://orcid.org/0000-0002-7094-5371> <http://www.w3.org/2000/01/rdf-schema#label> "Markus Schilling" .
+# 
+<https://orcid.org/0000-0002-9014-2920> <http://www.w3.org/2000/01/rdf-schema#label> "Henk Birkholz" .
+# 
+<https://orcid.org/0000-0003-1649-6832> <http://www.w3.org/2000/01/rdf-schema#label> "Thomas Hanke" .
 # 
 # 
 # 
