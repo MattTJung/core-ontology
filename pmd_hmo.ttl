@@ -5,17 +5,15 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix qudt: <https://qudt.org/vocab/unit/> .
 @base <https://w3id.org/pmd/hmo> .
 
 <https://w3id.org/pmd/hmo> rdf:type owl:Ontology ;
                             owl:imports <https://w3id.org/pmd/co> ;
-                            #<http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0001-7192-7143> ,
-                            #                                          <https://orcid.org/0000-0002-3717-7104> ,
-                            #                                          <https://orcid.org/0000-0002-7094-5371> ,
-                            #                                          <https://orcid.org/0000-0002-9014-2920> ,
-                            #                                          <https://orcid.org/0000-0003-4971-3645> ;
+                            <http://purl.org/dc/elements/1.1/creator> <https://orcid.org/0000-0003-0086-5808> ,
+                                                                      <https://orcid.org/0000-0002-9014-2920> ;
                             <http://purl.org/dc/elements/1.1/license> <http://creativecommons.org/licenses/by/4.0/> ;
-                            #<http://purl.org/dc/terms/bibliographicCitation> "Markus Schilling, Bernd Bayerlein, Henk Birkholz, Philipp von Hartrott, Jörg Waitelonis. (August 1st, 2023) TTO: Tensile Test Ontology. Version 2.0.2, https://w3id.org/pmd/co"@en ;
+                            <http://purl.org/dc/terms/bibliographicCitation> "Matthias Jung, Henk Birkholz. (August 18th, 2023) HMO: Hardness Measurement Ontology. Version 0.0.1, https://w3id.org/pmd/hmo"@en ;
                             <http://purl.org/dc/terms/created> "2023-08-18"@en ;
                             <http://purl.org/dc/terms/title> "Hardness Measurement Ontology (HMO)"@en ;
                             owl:versionInfo "0.0.1" ;
@@ -26,7 +24,8 @@ The HMO was developed in the frame of the PMD project. The HMO provides conceptu
 The HMO class structure forms a comprehensible and semantic layer for unified storage of data generated in a hardness test including the possibility to record data from analysis, re-evaluation and re-use. Furthermore, extensive metadata allows to assess data quality and reproduce experiments. Following the open world assumption, object properties are deliberately low restrictive and sparse.
 
 HMO of PMD at GitHub: https://github.com/materialdigital/application-ontologies/tree/main/tensile_test_ontology_TTO"""@en ;
-                            <http://www.w3.org/ns/prov#editorialNote> "The tensile test ontology (HMO) was developed in the frame of the joint project of platform material digital (PMD). As being one of the modules of it, the HMO is strongly connected to the PMD core ontology (PMDco) and thus, HMO concepts use the namespace https://w3id.org/pmd/co."@en .
+                            <http://www.w3.org/ns/prov#editorialNote> "The hardness measurement ontology (HMO) was developed in the frame of the joint project of platform material digital (PMD). As being one of the modules of it, the HMO is strongly connected to the PMD core ontology (PMDco) and thus, HMO concepts use the namespace https://w3id.org/pmd/co."@en ;
+                            <http://www.w3.org/ns/prov#editorialNote> "The development of the hardness measurement relied largely on the work of Markus Schilling and others on the Tensile Test ontology (TTO), https://w3id.org/pmd/tto"@en .
 
 #################################################################
 #    Object Properties
@@ -45,7 +44,7 @@ HMO of PMD at GitHub: https://github.com/materialdigital/application-ontologies/
 #    Classes
 #################################################################
 
-###  https://w3id.org/pmd/co/ISO6507-1VickersHardnessTest
+###  https://w3id.org/pmd/hmo/ISO6507-1VickersHardnessTest
 :ISO6507-1VickersHardnessTest rdf:type owl:Class ;
                              owl:equivalentClass [ rdf:type owl:Restriction ;
                                                    owl:onProperty pmdco:participant ;
@@ -67,76 +66,382 @@ HMO of PMD at GitHub: https://github.com/materialdigital/application-ontologies/
                                                    owl:onProperty pmdco:characteristic ;
                                                    owl:someValuesFrom :VickersTestForce
                                                  ] ;
-                             rdfs:subClassOf pmdco:MechanicalTestingProcess ;
+                                                 ### TODO: Kann hier eine VickersTestForceDuration von 10...15s impliziert werden?
+                             rdfs:subClassOf pmdco:VickersHardnessTest ;
                              rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
-                             rdfs:label "Vickers hardness test in accordance with ISO 6507-1"@en ,
-                                        "Vickers-Härtemessung nach ISO 6507-1"@de ;
-                             #<http://www.w3.org/2004/02/skos/core#definition> "Dieses Wertobjekt beschreibt eine Variation der Abmessungen eines Prüfkörpers in Bezug auf seine Querachse, die sich auf seine Querschnittsfläche auswirkt und möglicherweise während eines Zugversuchs auftritt. Das Verhältnis der wahren plastischen Breitendehnung und der wahren plastischen Dickendehnung in einem in uniaxialem Zug beanspruchten Prüfkörper (vertikale Anisotropie) kann anhand dieser Information berechnet werden."@de ,
-                             #                                                 "This value object describes a variation in the dimension of a test piece referring to its transversal axis affecting its cross-sectional area that may potentially occur during a tensile test. The ratio of the true plastic strain in width and the true plastic strain in thickness in a test piece loaded in uniaxial tension (vertical anisotropy) may be calculated using this information."@en ;
+                             rdfs:label "Vickers hardness test ISO"@en ,
+                                        "Vickers-Härteprüfung ISO"@de ;
+                             <http://www.w3.org/2004/02/skos/core#definition> "Vickers hardness test in accordance with ISO 6507-1"@en ,
+                                                                              "Vickers-Härtemessung nach ISO 6507-1"@de ;
                              pmdco:definitionSource "DIN EN ISO 6507-1:2018-07" .
 
 
-###  https://w3id.org/pmd/co/VickersHardnessTestingMachine
+###  https://w3id.org/pmd/hmo/VickersHardnessTestingMachine
 :VickersHardnessTestingMachine rdf:type owl:Class ;
                              rdfs:subClassOf pmdco:TestingMachine ;
                              rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
-                             rdfs:label "Testing machine for the Vickers hardness test in accordance with ISO 6507-2"@en ,
-                                        "Prüfmaschine für die Vickers-Härtemessung in Übereinstimmung mit ISO 6507-2"@de ;
-                             #<http://www.w3.org/2004/02/skos/core#definition> "Dieses Wertobjekt beschreibt eine Variation der Abmessungen eines Prüfkörpers in Bezug auf seine Querachse, die sich auf seine Querschnittsfläche auswirkt und möglicherweise während eines Zugversuchs auftritt. Das Verhältnis der wahren plastischen Breitendehnung und der wahren plastischen Dickendehnung in einem in uniaxialem Zug beanspruchten Prüfkörper (vertikale Anisotropie) kann anhand dieser Information berechnet werden."@de ,
-                             #                                                 "This value object describes a variation in the dimension of a test piece referring to its transversal axis affecting its cross-sectional area that may potentially occur during a tensile test. The ratio of the true plastic strain in width and the true plastic strain in thickness in a test piece loaded in uniaxial tension (vertical anisotropy) may be calculated using this information."@en ;
+                             rdfs:label "Vickers Hardness Testing Machine"@en ,
+                                        "Vickers-Härteprüfgerät"@de ;
+                             <http://www.w3.org/2004/02/skos/core#definition> "Testing machine for the Vickers hardness test in accordance with ISO 6507-2"@en ,
+                                                                              "Prüfmaschine für die Vickers-Härtemessung in Übereinstimmung mit ISO 6507-2"@de ;
                              pmdco:definitionSource "DIN EN ISO 6507-1:2018-07" .
 
 
-###  https://w3id.org/pmd/co/VickersIndenter
+###  https://w3id.org/pmd/hmo/VickersIndenter
 :VickersIndenter rdf:type owl:Class ;
                      rdfs:subClassOf pmdco:Component ;
                      rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
-                     rdfs:label "Indenter for the Vickers hardness measurement as specified in ISO 6507-2"@en ,
-                                "Eindringkörper für die Vickers-Härtemessung nach ISO 6507-2"@de ;
-                     #<http://www.w3.org/2004/02/skos/core#definition> "Diese Eigenschaft beschreibt die Verschiebung der Traverse einer Zugprüfmaschine."@de ,
-                     #                                                 """Dimensional analysis: L Unit (e.g. SI): mm"""@en ,
-                     #                                                 "This property describes the displacement of the crossheads of a tensile testing machine."@en ;
+                     rdfs:label "Vickers Indenter"@en ,
+                                "Vickers-Eindringkörper"@de ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Indenter for the Vickers hardness measurement as specified in ISO 6507-2"@en ,
+                                                                      "Eindringkörper für die Vickers-Härtemessung nach ISO 6507-2"@de ;
                      pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
 
 
-###  https://w3id.org/pmd/co/DiagonalMeasuringSystem
+###  https://w3id.org/pmd/hmo/DiagonalMeasuringSystem
 :DiagonalMeasuringSystem rdf:type owl:Class ;
                      rdfs:subClassOf pmdco:MeasuringDevice ;
                      rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
-                     rdfs:label "Diagonal measuring system for the Vickers hardness measurement as specified in ISO 6507-2"@en ,
-                                "Diagonalmesssystem für die Vickers-Härtemessung nach ISO 6507-2"@de ;
-                     #<http://www.w3.org/2004/02/skos/core#definition> "Diese Eigenschaft beschreibt die Verschiebung der Traverse einer Zugprüfmaschine."@de ,
-                     #                                                 """Dimensional analysis: L Unit (e.g. SI): mm"""@en ,
-                     #                                                 "This property describes the displacement of the crossheads of a tensile testing machine."@en ;
+                     rdfs:label "Vickers diagonal measuring system"@en ,
+                                "Vickers-Diagonalmesssystem"@de ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Diagonal measuring system for the Vickers hardness measurement as specified in ISO 6507-2"@en ,
+                                                                      "Diagonalmesssystem für die Vickers-Härtemessung nach ISO 6507-2"@de ;
                      pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
 
 
-###  https://w3id.org/pmd/co/VickersTestForce
+###  https://w3id.org/pmd/hmo/VickersTestForce
 :VickersTestForce rdf:type owl:Class ;
-                     rdf:subClassOf pmdco:SetPoint ;
-                     rdf:subClassOf pmdco:PrimaryData ; ##TODO: Macht das so Sinn?
+                     # TODO
+                     # pmdco:Force hat die Eigenschaft rdfs:subclassOf Metadata or ((Measurement or SetPoint) and (PrimaryData or SecondaryData)
+                     # :VickersTestForce soll aber nur eine subclass von SetPoint and PrimaryData sein können
+                     # Wie kann man das umsetzen?
                      rdfs:subClassOf pmdco:Force ;
                      rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
-                     rdfs:label "Test force used in the Vickers hardness measurement"@en ,
-                                "Prüfkraft, die für die Vickers-Härtemessung verwendet wurde"@de ;
-                     #<http://www.w3.org/2004/02/skos/core#definition> "Diese Eigenschaft beschreibt die Verschiebung der Traverse einer Zugprüfmaschine."@de ,
-                     #                                                 """Dimensional analysis: L Unit (e.g. SI): mm"""@en ,
-                     #                                                 "This property describes the displacement of the crossheads of a tensile testing machine."@en ;
+                     rdfs:label "Vickers test force"@en ,
+                                "Vickers-Prüfkraft"@de ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Test force used in the Vickers hardness measurement"@en ,
+                                                                      "Prüfkraft, die für die Vickers-Härtemessung verwendet wurde"@de ;
                      pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
 
 
-###  https://w3id.org/pmd/co/VickersTestForceDuration
-:VickersTestForce rdf:type owl:Class ;
-                     rdf:subClassOf pmdco:SetPoint ;
-                     rdf:subClassOf pmdco:PrimaryData ; ##TODO: Macht das so Sinn?
+###  https://w3id.org/pmd/hmo/VickersTestForceDuration
+:VickersTestForceDuration rdf:type owl:Class ;
+                     # TODO
+                     # pmdco:Duration hat die Eigenschaft rdfs:subclassOf Metadata or ((Measurement or SetPoint) and (PrimaryData or SecondaryData)
+                     # :VickersTestForceDuration soll aber nur eine subclass von SetPoint and PrimaryData sein können
+                     # Wie kann man das umsetzen?
                      rdfs:subClassOf pmdco:Duration ;
                      rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
-                     rdfs:label "Test force used in the Vickers hardness measurement"@en ,
-                                "Prüfkraft, die für die Vickers-Härtemessung verwendet wurde"@de ;
-                     #<http://www.w3.org/2004/02/skos/core#definition> "Diese Eigenschaft beschreibt die Verschiebung der Traverse einer Zugprüfmaschine."@de ,
-                     #                                                 """Dimensional analysis: L Unit (e.g. SI): mm"""@en ,
-                     #                                                 "This property describes the displacement of the crossheads of a tensile testing machine."@en ;
+                     rdfs:label "Vickers test duration"@en ,
+                                "Vickers-Eindruckdauer"@de ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Duration the test force was applied in the Vickers hardness measurement"@en ,
+                                                                      "Zeit, die die Prüfkraft in der Vickers-Härtemessung aufgebracht wurde"@de ;
                      pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/VickersIndentationDiagonal
+:VickersIndentationDiagonal rdf:type owl:Class ;
+                     # TODO
+                     # pmdco:Length hat die Eigenschaft rdfs:subclassOf Metadata or ((Measurement or SetPoint) and (PrimaryData or SecondaryData)
+                     # :VickersIndentationDiagonal soll aber nur eine subclass von Measurement and PrimaryData sein können
+                     # Wie kann man das umsetzen?
+                     rdfs:subClassOf pmdco:Length ;
+                     rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+                     rdfs:label "Vickers indention diagonal length"@en ,
+                                "Länge der Eindruck-Diagonalen"@de ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "The measured length of the diagonal of the Indention"@en ,
+                                                                      "Die gemessene Länge der Eindruck-Diagonalen"@de ;
+                     pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/VickersIndentationIndividualDiagonal
+:VickersIndentationIndividualDiagonal rdf:type owl:Class ;
+                     rdfs:subClassOf :VickersIndentationDiagonal ;
+                     rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+                     rdfs:label "Vickers indention individual diagonal length"@en ,
+                                "Länge einer einzelnen Eindruck-Diagonalen"@de ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "The measured length of the diagonal of the Indention"@en ,
+                                                                      "Die gemessene Länge der Eindruck-Diagonalen"@de ;
+                     pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+###  https://w3id.org/pmd/hmo/HardnessValue
+:HardnessValue rdf:type owl:Class ;
+                     # TODO
+                     # pmdco:ValueObject hat die Eigenschaft rdfs:subclassOf Metadata or ((Measurement or SetPoint) and (PrimaryData or SecondaryData)
+                     # :HardnessValue soll aber nur eine subclass von Measurement and SecondaryData sein können
+                     # Wie kann man das umsetzen?
+                     rdfs:subClassOf pmdco:ValueObject ;
+                     rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+                     rdfs:label "Hardness"@en ,
+                                "Härte"@de ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Härte"@de ,
+                                                                      "Hardness"@en .
+
+###  https://w3id.org/pmd/hmo/VickersHardnessValue
+:VickersHardnessValue rdf:type owl:Class ;
+                     rdfs:subClassOf :HardnessValue ;
+                     rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+                     rdfs:label "Vickers hardness value"@en ,
+                                "Vickers-Härte"@de ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "Vickers-Härtewert"@de ,
+                                                                      "Vickers hardness value"@en ;
+                     pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/pmd/hmo/TestForceHV0001
+:TestForceHV0001 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV0.001 test force"@en ,
+                        "Prüfkraft HV0.001"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "0.001"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV0002
+:TestForceHV0002 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV0.002 test force"@en ,
+                        "Prüfkraft HV0.002"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "0.002"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV0003
+:TestForceHV0003 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV0.003 test force"@en ,
+                        "Prüfkraft HV0.003"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "0.003"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV0005
+:TestForceHV0005 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV0.005 test force"@en ,
+                        "Prüfkraft HV0.005"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "0.005"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV001
+:TestForceHV001 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV0.01 test force"@en ,
+                        "Prüfkraft HV0.01"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "0.01"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV0015
+:TestForceHV0015 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV0.015 test force"@en ,
+                        "Prüfkraft HV0.015"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "0.015"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV002
+:TestForceHV002 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV0.02 test force"@en ,
+                        "Prüfkraft HV0.02"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "0.02"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV0025
+:TestForceHV0025 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV0.025 test force"@en ,
+                        "Prüfkraft HV0.025"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "0.025"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV005
+:TestForceHV005 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV0.05 test force"@en ,
+                        "Prüfkraft HV0.05"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "0.05"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV01
+:TestForceHV01 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV0.1 test force"@en ,
+                        "Prüfkraft HV0.1"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "0.1"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV02
+:TestForceHV02 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV0.2 test force"@en ,
+                        "Prüfkraft HV0.2"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "0.2"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV03
+:TestForceHV03 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV0.3 test force"@en ,
+                        "Prüfkraft HV0.3"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "0.3"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV05
+:TestForceHV05 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV0.5 test force"@en ,
+                        "Prüfkraft HV0.5"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "0.5"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV1
+:TestForceHV1 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV1 test force"@en ,
+                        "Prüfkraft HV1"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "1"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV2
+:TestForceHV2 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV2 test force"@en ,
+                        "Prüfkraft HV2"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "2"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV3
+:TestForceHV3 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV3 test force"@en ,
+                        "Prüfkraft HV3"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "3"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV4
+:TestForceHV4 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV4 test force"@en ,
+                        "Prüfkraft HV4"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "4"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV5
+:TestForceHV5 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV5 test force"@en ,
+                        "Prüfkraft HV5"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "5"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV10
+:TestForceHV10 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV10 test force"@en ,
+                        "Prüfkraft HV10"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "10"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV20
+:TestForceHV20 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV20 test force"@en ,
+                        "Prüfkraft HV20"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "20"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV30
+:TestForceHV30 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV30 test force"@en ,
+                        "Prüfkraft HV30"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "30"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV50
+:TestForceHV50 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV50 test force"@en ,
+                        "Prüfkraft HV50"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "50"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
+
+
+###  https://w3id.org/pmd/hmo/TestForceHV100
+:TestForceHV100 rdf:type owl:NamedIndividual ;
+            rdf:type :VickersTestForce ;
+            rdfs:isDefinedBy <https://w3id.org/pmd/hmo> ;
+            rdfs:label "HV100 test force"@en ,
+                        "Prüfkraft HV100"@de ;
+            pmdco:unit qudt:KiloPOND ;
+            pmdco:value "100"^^xsd:float ;
+            pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
