@@ -94,8 +94,7 @@ HMO of PMD at GitHub: https://github.com/materialdigital/application-ontologies/
                      rdfs:label "Indenter for the Vickers hardness measurement as specified in ISO 6507-2"@en ,
                                 "Eindringkörper für die Vickers-Härtemessung nach ISO 6507-2"@de ;
                      #<http://www.w3.org/2004/02/skos/core#definition> "Diese Eigenschaft beschreibt die Verschiebung der Traverse einer Zugprüfmaschine."@de ,
-                     #                                                 """Dimensional analysis: L
-Unit (e.g. SI): mm"""@en ,
+                     #                                                 """Dimensional analysis: L Unit (e.g. SI): mm"""@en ,
                      #                                                 "This property describes the displacement of the crossheads of a tensile testing machine."@en ;
                      pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
 
@@ -107,8 +106,7 @@ Unit (e.g. SI): mm"""@en ,
                      rdfs:label "Diagonal measuring system for the Vickers hardness measurement as specified in ISO 6507-2"@en ,
                                 "Diagonalmesssystem für die Vickers-Härtemessung nach ISO 6507-2"@de ;
                      #<http://www.w3.org/2004/02/skos/core#definition> "Diese Eigenschaft beschreibt die Verschiebung der Traverse einer Zugprüfmaschine."@de ,
-                     #                                                 """Dimensional analysis: L
-Unit (e.g. SI): mm"""@en ,
+                     #                                                 """Dimensional analysis: L Unit (e.g. SI): mm"""@en ,
                      #                                                 "This property describes the displacement of the crossheads of a tensile testing machine."@en ;
                      pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
 
