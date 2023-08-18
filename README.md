@@ -4,7 +4,8 @@ This is version v2.0.2 of the PMD Core Ontology (PMDco).
 
 Files: 
  - ```pmd_core.ttl```    core version of the PMD ontology
- - ```pmd_tto.ttl```     tensile test module (imports pmd_core.ttl). 
+ - ```pmd_tto.ttl```     tensile test module (imports pmd_core.ttl).
+ - ```pmd_hmo.ttl```     hardness measurement module (imports pmd_core.ttl). 
 
 If you like to contribute, please feel free to add any issues or participate in discussions here on Github.
 
