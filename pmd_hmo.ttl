@@ -122,8 +122,7 @@ Unit (e.g. SI): mm"""@en ,
                      rdfs:label "Test force used in the Vickers hardness measurement"@en ,
                                 "Prüfkraft, die für die Vickers-Härtemessung verwendet wurde"@de ;
                      #<http://www.w3.org/2004/02/skos/core#definition> "Diese Eigenschaft beschreibt die Verschiebung der Traverse einer Zugprüfmaschine."@de ,
-                     #                                                 """Dimensional analysis: L
-Unit (e.g. SI): mm"""@en ,
+                     #                                                 """Dimensional analysis: L Unit (e.g. SI): mm"""@en ,
                      #                                                 "This property describes the displacement of the crossheads of a tensile testing machine."@en ;
                      pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
 
@@ -137,8 +136,7 @@ Unit (e.g. SI): mm"""@en ,
                      rdfs:label "Test force used in the Vickers hardness measurement"@en ,
                                 "Prüfkraft, die für die Vickers-Härtemessung verwendet wurde"@de ;
                      #<http://www.w3.org/2004/02/skos/core#definition> "Diese Eigenschaft beschreibt die Verschiebung der Traverse einer Zugprüfmaschine."@de ,
-                     #                                                 """Dimensional analysis: L
-Unit (e.g. SI): mm"""@en ,
+                     #                                                 """Dimensional analysis: L Unit (e.g. SI): mm"""@en ,
                      #                                                 "This property describes the displacement of the crossheads of a tensile testing machine."@en ;
                      pmdco:definitionSource "DIN EN ISO 6507-1:2018-07"@en .
 
