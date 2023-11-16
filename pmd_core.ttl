@@ -268,6 +268,7 @@
 :input rdf:type owl:ObjectProperty ;
        rdfs:subPropertyOf <http://www.w3.org/ns/prov#used> ,
                           :participant ;
+       rdfs:domain :Process ;
        owl:inverseOf :inputOf ;
        rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
        rdfs:label "input"@en ;
@@ -307,6 +308,7 @@
 :output rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf <http://www.w3.org/ns/prov#generated> ,
                            :participant ;
+        rdfs:domain :Process ;
         owl:inverseOf :outputOf ;
         rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
         rdfs:label "output"@en ;
