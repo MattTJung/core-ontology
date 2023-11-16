@@ -17,6 +17,7 @@
                                                                      <https://orcid.org/0000-0003-4971-3645> ,
                                                                      <https://orcid.org/0009-0000-6469-744X> ,
                                                                      "Jannis Grundmann" ;
+                           <http://purl.org/dc/elements/1.1/contributor> <https://orcid.org/0000-0003-0086-5808> ;
                            <http://purl.org/dc/terms/bibliographicCitation> "Bernd Bayerlein, Henk Birkholz, Sascha Fliegener, Jannis Grundmann, Thomas Hanke, Philipp von Hartrott, Markus Schilling, Jörg Waitelonis. (September 20th, 2023) PMDco: platform material digital ontology. Version 2.0.5, https://w3id.org/pmd/co/" ;
                            <http://purl.org/dc/terms/created> "2023-11-16" ;
                            <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> ;
@@ -194,7 +195,11 @@
                                             :ValueObject
                                           )
                             ] ;
-                rdfs:range :ValueObject ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:intersectionOf ( :ValueObject
+                                                  :Metadata
+                                                )
+                           ] ;
                 rdfs:isDefinedBy <https://w3id.org/pmd/co> ;
                 rdfs:label "characteristic"@en ;
                 <http://www.w3.org/2004/02/skos/core#altLabel> "has characteristic"@en .
